@@ -1,6 +1,7 @@
 package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -29,9 +30,6 @@ public class PenaltysActivity extends Activity{
     private RadioButton rbTackleAlto;
     private RadioButton rbRetener;
     private RadioButton rbTirarseEnElRuck;
-
-
-
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +135,18 @@ public class PenaltysActivity extends Activity{
                 }
 
                 txcantPenalesV.setText(String.valueOf(g.getContpenalesV()));
+            }
+        });
+        findViewById(R.id.btsumarPenal).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PenaltysActivity.this, MainActivity.class));
+            }
+        });
+        findViewById(R.id.btSumarV).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PenaltysActivity.this, MainActivity.class));
             }
         });
     }
