@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.holamundo.alejandro.contadorpartidosrugby.ActivityPenales"
-    android:background="#fe181818"
+    android:background="#fef6f6f6"
     android:visibility="visible"
     android:clickable="true"
     android:id="@+id/layout_Mayor"
@@ -17,154 +17,181 @@
         android:orientation="horizontal"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_alignParentStart="true">
 
         <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="341dp"
+            android:layout_height="411dp"
+            android:showDividers="beginning"
+            android:touchscreenBlocksFocus="true"
+            android:checkedButton="@android:integer/config_shortAnimTime">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Carga sin Pelota"
                 android:id="@+id/rbCargaSinPelota"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="@bool/abc_action_bar_embed_tabs" />
+                android:checked="@bool/abc_action_bar_embed_tabs"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Derrumbe de Maul"
                 android:id="@+id/brDerrumbe"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="true" />
+                android:checked="true"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Entrada por el costado "
                 android:id="@+id/rbEntradaDeCostado"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="true" />
+                android:checked="true"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Inconducta"
                 android:id="@+id/rbInconducta"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Line"
+                android:text="Carga indebida en Line"
                 android:id="@+id/rbLine"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="true" />
+                android:checked="true"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Manos en el ruck"
                 android:id="@+id/rbManos"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="true" />
+                android:checked="true"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Off Side"
                 android:id="@+id/rbOffSide"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Scrum"
                 android:id="@+id/rbScrum"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tackle Alto"
                 android:id="@+id/rbTackleAlto"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="true" />
+                android:checked="true"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Retención"
                 android:id="@+id/rbRetener"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
 
             <RadioButton
-                android:layout_width="wrap_content"
+                android:layout_width="325dp"
                 android:layout_height="wrap_content"
                 android:text="Tirarse en el Ruck"
                 android:id="@+id/rbTirarseEnElRuck"
-                android:textColor="#b1ffffff"
+                android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
                 android:importantForAccessibility="yes"
                 android:focusable="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textStyle="normal|bold|italic"
+                android:textSize="@dimen/abc_text_size_large_material" />
         </RadioGroup>
     </LinearLayout>
 
@@ -207,25 +234,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
         android:id="@+id/txContPenalesV"
         android:layout_row="9"
         android:layout_column="15"
         android:layout_above="@+id/btSumarV"
         android:layout_alignEnd="@+id/gridLayout"
-        android:textColor="#ffffffff" />
+        android:textColor="#ff040404" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="27dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
         android:id="@+id/txContPenales"
         android:layout_row="9"
         android:layout_column="5"
         android:layout_alignTop="@+id/txContPenalesV"
         android:layout_alignEnd="@+id/btsumarPenal"
-        android:textColor="#ffffffff" />
+        android:textColor="#ff040404" />
 
 </RelativeLayout>
 

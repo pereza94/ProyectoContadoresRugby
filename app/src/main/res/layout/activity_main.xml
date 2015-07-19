@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:text="Penal"
             android:id="@+id/btPenal"
-            android:layout_gravity="center_horizontal" />
+            android:textColor="#ffeefff6"
+            android:background="#ff1423ff" />
     </LinearLayout>
 
     <LinearLayout
@@ -34,14 +35,16 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="169dp"
-            android:id="@+id/d">
+            android:id="@+id/action_bar_activity_content">
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Obteciones"
                 android:id="@+id/btObtenciones"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffc9cbcc"
+                android:background="#ff044b00" />
         </LinearLayout>
     </LinearLayout>
 
@@ -52,6 +55,9 @@
         android:id="@+id/btPerdidas"
         android:singleLine="true"
         android:layout_below="@+id/linearLayout2"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffa6a8a2"
+        android:shadowColor="#ff6a46ff"
+        android:background="#ff6e0705" />
 
 </RelativeLayout>
