@@ -137,18 +137,7 @@ public class PenaltysActivity extends Activity{
                 txcantPenalesV.setText(String.valueOf(g.getContpenalesV()));
             }
         });
-        findViewById(R.id.btsumarPenal).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(PenaltysActivity.this, MainActivity.class));
-            }
-        });
-        findViewById(R.id.btSumarV).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(PenaltysActivity.this, MainActivity.class));
-            }
-        });
+        
     }
 
 
