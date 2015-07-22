@@ -80,7 +80,7 @@
             <RadioButton
                 android:layout_width="351dp"
                 android:layout_height="wrap_content"
-                android:text="Hombros  debajo de la cadera (ruck)"
+                android:text="Hombros  debajo de la cadera "
                 android:id="@+id/rbCaderasBajasRuck"
                 android:textColor="#ff342c2f"
                 android:textColorHighlight="#ff4c3dff"
@@ -121,22 +121,6 @@
                 android:importantForAccessibility="yes"
                 android:focusable="true"
                 android:checked="true"
-                android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_medium_material"
-                android:buttonTint="#ff5206ff" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hombros  debajo de la cadera (Maul)"
-                android:id="@+id/rbHombrosdebajoMaul"
-                android:textColor="#ff342c2f"
-                android:textColorHighlight="#ff4c3dff"
-                android:visibility="visible"
-                android:textColorLink="#ff2928ff"
-                android:importantForAccessibility="yes"
-                android:focusable="true"
-                android:checked="false"
                 android:textStyle="normal|bold|italic"
                 android:textSize="@dimen/abc_text_size_medium_material"
                 android:buttonTint="#ff5206ff" />
