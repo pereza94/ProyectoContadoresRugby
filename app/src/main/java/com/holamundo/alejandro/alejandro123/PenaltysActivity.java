@@ -1,8 +1,6 @@
 package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,7 +35,7 @@ public class PenaltysActivity extends Activity{
         final GlobalVarables g = new GlobalVarables();
         setContentView(R.layout.activity_penaltys);
         final TextView txcantPenales = (TextView) findViewById(R.id.txContPenales);
-        final TextView txcantPenalesV = (TextView) findViewById(R.id.txContPenalesV);
+        final TextView txcantPenalesV = (TextView) findViewById(R.id.txContFKVisitante);
         btsumar = (Button) findViewById(R.id.btsumarPenal);
         rbCargaSinPelota = (RadioButton) findViewById(R.id.rbCargaSinPelota);
         rbDerrumbeMaul = (RadioButton) findViewById(R.id.brDerrumbe);

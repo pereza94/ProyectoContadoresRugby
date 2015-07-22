@@ -24,7 +24,7 @@
 
         <RadioGroup
             android:layout_width="341dp"
-            android:layout_height="411dp"
+            android:layout_height="325dp"
             android:showDividers="beginning"
             android:touchscreenBlocksFocus="true"
             android:checkedButton="@android:integer/config_shortAnimTime">
@@ -202,21 +202,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/txContPenalesV"
-        android:layout_row="9"
-        android:layout_column="15"
-        android:layout_above="@+id/btSumarV"
-        android:textColor="#ff040404" />
+        android:id="@+id/txContFKLocal"
+        android:layout_above="@+id/btsumarPenal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="27dp"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/txContPenales"
-        android:layout_row="9"
-        android:layout_column="5"
-        android:layout_alignTop="@+id/txContPenalesV"
-        android:layout_alignEnd="@+id/btsumarPenal"
-        android:textColor="#ff040404" />
+        android:id="@+id/txcontFKVisitante"
+        android:layout_alignTop="@+id/txContFKLocal"
+        android:layout_alignStart="@+id/btSumarV"
+        android:layout_marginStart="32dp" />
 
 </RelativeLayout>

@@ -1,12 +1,31 @@
 package com.holamundo.alejandro.alejandro123;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 
-public class Activity_freeKicks extends ActionBarActivity {
+public class Activity_freeKicks extends Activity {
+
+    private RadioButton rbPrePush;
+    private RadioButton rbPerdidaTiempo;
+    private RadioButton rbDemoraSalida22;
+    private RadioButton rbCaderasBajasRuck;
+    private RadioButton rbDevolverPelotaAlRuck;
+    private RadioButton rbSimularSalidaDePelota;
+    private RadioButton rbCantidadJugadoresLine;
+    private RadioButton rbInfracción1raLinea;
+    private RadioButton rbPelotaTorcidaEnElScrum;
+    private Button sumarFKlocal;
+    private Button sumarFKVisitante;
+    private TextView txcontFKVisitante;
+    private TextView txContFKLocal;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
