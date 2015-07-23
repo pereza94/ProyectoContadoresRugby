@@ -8,7 +8,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout">
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -16,7 +17,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:layout_gravity="center"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:orientation="vertical">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -69,27 +71,33 @@
                 android:weightSum="1">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="37dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Small Text"
-                    android:id="@+id/textView"
-                    android:layout_weight="0.51" />
+                    android:id="@+id/textView" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Small Text"
-                    android:id="@+id/textView2"
-                    android:layout_weight="0.29" />
+                    android:id="@+id/txScrumAFGAnado"
+                    android:layout_weight="0.51"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:typeface="serif" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Small Text"
-                    android:id="@+id/textView3" />
+                    android:id="@+id/txScrumAFPerdido"
+                    android:layout_weight="0.37" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/txScrumAFReseteado" />
             </LinearLayout>
 
             <RadioButton
@@ -164,6 +172,35 @@
                     android:text="Small Text"
                     android:id="@+id/textView6" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.55"></FrameLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUMAR"
+                        android:id="@+id/btSumarScrum"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.15" />
+                </LinearLayout>
             </LinearLayout>
 
         </RadioGroup>

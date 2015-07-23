@@ -43,6 +43,80 @@ public class GlobalVarables {
     private static Integer contFKDiferentCantidadJugEnLineV= 0;
     private static Integer contFKPelotaTorcidaScrumV = 0;
     private static Integer ContFKVisitante = 0;
+    private static Integer ContScrumaFavor = 0;
+    private static Integer ContScrumEnContra = 0;
+    private static Integer ContScrumAFGanados = 0;
+
+    public static Integer getContScrumaFavor() {
+        return ContScrumaFavor;
+    }
+
+    public static void setContScrumaFavor(Integer contScrumaFavor) {
+        ContScrumaFavor = contScrumaFavor;
+    }
+
+    public static Integer getContScrumEnContra() {
+        return ContScrumEnContra;
+    }
+
+    public static void setContScrumEnContra(Integer contScrumEnContra) {
+        ContScrumEnContra = contScrumEnContra;
+    }
+
+    public static Integer getContScrumAFGanados() {
+        return ContScrumAFGanados;
+    }
+
+    public static void setContScrumAFGanados(Integer contScrumAFGanados) {
+        ContScrumAFGanados = contScrumAFGanados;
+    }
+
+    public static Integer getContScrumAFPerdidos() {
+        return ContScrumAFPerdidos;
+    }
+
+    public static void setContScrumAFPerdidos(Integer contScrumAFPerdidos) {
+        ContScrumAFPerdidos = contScrumAFPerdidos;
+    }
+
+    public static Integer getContScrumAFReseteados() {
+        return ContScrumAFReseteados;
+    }
+
+    public static void setContScrumAFReseteados(Integer contScrumAFReseteados) {
+        ContScrumAFReseteados = contScrumAFReseteados;
+    }
+
+    public static Integer getContScrumECGanados() {
+        return ContScrumECGanados;
+    }
+
+    public static void setContScrumECGanados(Integer contScrumECGanados) {
+        ContScrumECGanados = contScrumECGanados;
+    }
+
+    public static Integer getContScrumECPerdidos() {
+        return ContScrumECPerdidos;
+    }
+
+    public static void setContScrumECPerdidos(Integer contScrumECPerdidos) {
+        ContScrumECPerdidos = contScrumECPerdidos;
+    }
+
+    public static Integer getContScrumECReseteados() {
+        return ContScrumECReseteados;
+    }
+
+    public static void setContScrumECReseteados(Integer contScrumECReseteados) {
+        ContScrumECReseteados = contScrumECReseteados;
+    }
+
+    private static Integer ContScrumAFPerdidos = 0;
+    private static Integer ContScrumAFReseteados = 0;
+    private static Integer ContScrumECGanados = 0;
+    private static Integer ContScrumECPerdidos = 0;
+    private static Integer ContScrumECReseteados = 0;
+
 
     public static Integer getContFKVisitante() {
         return ContFKVisitante;
