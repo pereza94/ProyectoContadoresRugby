@@ -45,6 +45,8 @@ public class Activity_freeKicks extends Activity {
         rbInfraccion1raLinea = (RadioButton) findViewById(R.id.rbInfraccion1raLinea);
         rbPelotaTorcidaEnElScrum = (RadioButton) findViewById(R.id.rbPelotaTorcidaEnElScrum);
         sumarFKVisitante = (Button) findViewById(R.id.btVisitanteFk);
+        txcontFKVisitante.setText(String.valueOf(g.getContFKVisitante()));
+        txcantFKLocal.setText(String.valueOf(g.getContFKLocal()));
         sumarFKVisitante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

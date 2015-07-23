@@ -199,18 +199,20 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/txSumaFKVisitatne"
+        android:singleLine="true"
         android:layout_above="@+id/btVisitanteFk"
-        android:layout_alignEnd="@+id/btVisitanteFk"
-        android:layout_marginEnd="29dp"
-        android:singleLine="true" />
+        android:layout_alignStart="@+id/btVisitanteFk"
+        android:layout_marginStart="53dp"
+        android:textColor="#ff060606" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/txSumaLocal"
-        android:layout_alignTop="@+id/txSumaFKVisitatne"
-        android:layout_alignEnd="@+id/btsumarLocalPenal"
-        android:layout_marginEnd="22dp" />
+        android:layout_marginEnd="44dp"
+        android:layout_above="@+id/btsumarlocalFK"
+        android:layout_alignEnd="@+id/btsumarlocalFK"
+        android:textColor="#ff040404" />
 
 </RelativeLayout>
