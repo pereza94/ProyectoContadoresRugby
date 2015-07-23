@@ -28,11 +28,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_marginTop="161dp"
+        android:text="SCRUM"
+        android:id="@+id/btScrum"
+        android:layout_marginTop="145dp"
         android:layout_below="@+id/btPenal"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#ff1fdc1a" />
 
     <Button
         android:layout_width="match_parent"

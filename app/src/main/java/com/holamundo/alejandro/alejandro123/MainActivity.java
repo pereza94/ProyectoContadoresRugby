@@ -27,6 +27,12 @@ public class MainActivity extends Activity{
                 startActivity(new Intent(MainActivity.this, Activity_freeKicks.class));
             }
         });
+        findViewById(R.id.btScrum).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ScrumActivity.class));
+            }
+        });
     }
 
     @Override

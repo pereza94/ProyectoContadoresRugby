@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.holamundo.alejandro.alejandro123.ScrumActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scrum a Favor"
+                android:id="@+id/rbScrumAFavor"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ganado"
+                    android:id="@+id/rbScrumAFavorGanado"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="3.67"
+                    android:textColor="#ff088019" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Perdido"
+                    android:id="@+id/rbSrcumAfavorPerdido"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.97"
+                    android:textColor="#ff860712" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Reseteado"
+                    android:id="@+id/rbScrumAFavorReseteado"
+                    android:layout_weight="2.61"
+                    android:textColor="#ff090fa3" />
+
+            </RadioGroup>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="91dp"
+                android:text="Scrum en Contra"
+                android:id="@+id/rbScrumenContra"
+                android:layout_gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robado"
+                android:id="@+id/rbScrumEnContraRobado"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff088019" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perdido"
+                android:id="@+id/rbScrumEncontraPerdido"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff860712" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reseteado"
+                    android:id="@+id/rbScrumEnContraReseteado"
+                    android:textColor="#ff090fa3" />
+            </RadioGroup>
+
+        </RadioGroup>
+
+    </FrameLayout>
+
+</RelativeLayout>
