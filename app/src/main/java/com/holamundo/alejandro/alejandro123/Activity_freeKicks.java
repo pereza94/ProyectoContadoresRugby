@@ -32,7 +32,7 @@ public class Activity_freeKicks extends Activity {
         setContentView(R.layout.activity_activity_free_kicks);
         final GlobalVarables g = new GlobalVarables();
         setContentView(R.layout.activity_activity_free_kicks);
-        final TextView txcontFKVisitante = (TextView) findViewById(R.id.txContFKVisitante);
+        final TextView txcontFKVisitante = (TextView) findViewById(R.id.txSumaFKVisitatne);
         final TextView txcantFKLocal = (TextView) findViewById(R.id.txSumaLocal);
         sumarFKlocal = (Button)findViewById(R.id.btsumarlocalFK);
         rbPrePush = (RadioButton) findViewById(R.id.rbPrePush);
@@ -49,6 +49,34 @@ public class Activity_freeKicks extends Activity {
             @Override
             public void onClick(View v) {
                             g.setContFKVisitante(g.getContFKVisitante() + 1);
+                if (rbPrePush.isChecked()) {
+                    g.setContFKPrePushV(g.getContFKPrePushV() + 1);
+                }
+                if (rbPerdidaTiempo.isChecked()) {
+                    g.setContFKperderTiempoV(g.getContFKperderTiempoV() + 1);
+                }
+                if (rbDemoraSalida22.isChecked()) {
+                    g.setContFKdemoraSalida22V(g.getContFKdemoraSalida22V() + 1);
+                }
+                if (rbCaderasBajasRuck.isChecked()) {
+                    g.setContFKHombrosBajosV(g.getContFKHombrosBajosV() + 1);
+                }
+                if (rbDevolverPelotaAlRuck.isChecked()) {
+                    g.setContFKDevolverPelotaRuckV(g.getContFKDevolverPelotaRuckV() + 1);
+                }
+                if (rbSimularSalidaDePelota.isChecked()) {
+                    g.setContFKSimularsalidaDePelotaV(g.getContFKSimularsalidaDePelotaV() + 1);
+                }
+                if (rbCantidadJugadoresLine.isChecked()) {
+                    g.setContFKDiferentCantidadJugEnLineV(g.getContFKDiferentCantidadJugEnLineV() + 1);
+                }
+                if (rbInfraccion1raLinea.isChecked()) {
+                    g.setContFK1eraLineaV(g.getContFK1eraLineaV() + 1);
+                }
+                if (rbPelotaTorcidaEnElScrum.isChecked()) {
+                    g.setContFKPelotaTorcidaScrumV(g.getContFKPelotaTorcidaScrumV() + 1);
+                }
+                            txcontFKVisitante.setText(String.valueOf(g.getContFKVisitante()));
             }
         });
 
