@@ -36,7 +36,7 @@ public class PenaltysActivity extends Activity{
         setContentView(R.layout.activity_penaltys);
         final TextView txcantPenales = (TextView) findViewById(R.id.txContPenales);
         final TextView txcantPenalesV = (TextView) findViewById(R.id.txContFKVisitante);
-        btsumar = (Button) findViewById(R.id.btsumarLocalFK);
+        btsumar = (Button) findViewById(R.id.btsumarLocalPenal);
         rbCargaSinPelota = (RadioButton) findViewById(R.id.rbCargaSinPelota);
         rbDerrumbeMaul = (RadioButton) findViewById(R.id.brDerrumbe);
         rbEntradaCostado = (RadioButton) findViewById(R.id.rbEntradaDeCostado);
@@ -93,7 +93,7 @@ public class PenaltysActivity extends Activity{
 
             }
         });
-        btsumarV = (Button) findViewById(R.id.btSumarVisitanteFK);
+        btsumarV = (Button) findViewById(R.id.btSumarVisitantePenal);
         btsumarV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

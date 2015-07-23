@@ -33,8 +33,8 @@ public class Activity_freeKicks extends Activity {
         final GlobalVarables g = new GlobalVarables();
         setContentView(R.layout.activity_activity_free_kicks);
         final TextView txcontFKVisitante = (TextView) findViewById(R.id.txContFKVisitante);
-        final TextView txcantFKLocal = (TextView) findViewById(R.id.txContFKLocal);
-        sumarFKlocal = (Button)findViewById(R.id.btsumarLocalFK);
+        final TextView txcantFKLocal = (TextView) findViewById(R.id.txSumaLocal);
+        sumarFKlocal = (Button)findViewById(R.id.btsumarlocalFK);
         rbPrePush = (RadioButton) findViewById(R.id.rbPrePush);
         rbPerdidaTiempo = (RadioButton) findViewById(R.id.rbPerdidaDeTiempo);
         rbDemoraSalida22 = (RadioButton) findViewById(R.id.rbDemoraSalida22);
@@ -44,6 +44,14 @@ public class Activity_freeKicks extends Activity {
         rbCantidadJugadoresLine = (RadioButton) findViewById(R.id.rbCantidadJugadoresLine);
         rbInfraccion1raLinea = (RadioButton) findViewById(R.id.rbInfraccion1raLinea);
         rbPelotaTorcidaEnElScrum = (RadioButton) findViewById(R.id.rbPelotaTorcidaEnElScrum);
+        sumarFKVisitante = (Button) findViewById(R.id.btVisitanteFk);
+        sumarFKVisitante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                            g.setContFKVisitante(g.getContFKVisitante() + 1);
+            }
+        });
+
         sumarFKlocal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,15 +87,7 @@ public class Activity_freeKicks extends Activity {
                 txcantFKLocal.setText(String.valueOf(g.getContFKLocal()));
             }
         });
-        sumarFKVisitante = (Button)findViewById(R.id.btSumarVisitanteFK);
-    sumarFKVisitante.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            g.setContFKVisitante(g.getContFKVisitante()+1);
-            
-            txcontFKVisitante.setText(String.valueOf(g.getContFKVisitante()));
-        }
-    });
+
 
 
     }

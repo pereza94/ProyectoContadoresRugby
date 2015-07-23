@@ -42,7 +42,7 @@ public class GlobalVarables {
     private static Integer contFKSimularsalidaDePelotaV = 0;
     private static Integer contFKDiferentCantidadJugEnLineV= 0;
     private static Integer contFKPelotaTorcidaScrumV = 0;
-    private static Integer ContFKVisitante =0;
+    private static Integer ContFKVisitante = 0;
 
     public static Integer getContFKVisitante() {
         return ContFKVisitante;

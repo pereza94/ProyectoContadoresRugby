@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.holamundo.alejandro.contadorpartidosrugby.ActivityPenales"
+    tools:context="com.holamundo.alejandro.contadorpartidosrugby.ActivityFreKicks"
     android:background="#fef6f6f6"
     android:visibility="visible"
     android:clickable="true"
@@ -180,20 +180,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sumar Local"
-        android:id="@+id/btsumarLocalFK"
         android:layout_row="9"
         android:layout_column="0"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:id="@+id/btsumarlocalFK" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SumarVisitante"
-        android:id="@+id/btSumarVisitanteFK"
-        android:layout_row="9"
-        android:layout_column="16"
+        android:text="Sumar Visitante"
+        android:id="@+id/btVisitanteFk"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
 
@@ -201,18 +198,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/txContFKLocal"
-        android:layout_above="@+id/btsumarLocalFK"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="25dp" />
+        android:id="@+id/txSumaFKVisitatne"
+        android:layout_above="@+id/btVisitanteFk"
+        android:layout_alignEnd="@+id/btVisitanteFk"
+        android:layout_marginEnd="29dp"
+        android:singleLine="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/txcontFKVisitante"
-        android:layout_alignTop="@+id/txContFKLocal"
-        android:layout_alignStart="@+id/btSumarVisitanteFK"
-        android:layout_marginStart="32dp" />
+        android:id="@+id/txSumaLocal"
+        android:layout_alignTop="@+id/txSumaFKVisitatne"
+        android:layout_alignEnd="@+id/btsumarLocalPenal"
+        android:layout_marginEnd="22dp" />
 
 </RelativeLayout>
