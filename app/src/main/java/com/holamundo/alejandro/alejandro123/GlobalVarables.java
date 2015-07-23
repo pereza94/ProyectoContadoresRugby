@@ -34,6 +34,97 @@ public class GlobalVarables {
     private static Integer contFKDiferentCantidadJugEnLine= 0;
     private static Integer contFK1eraLinea = 0;
     private static Integer contFKLocal = 0;
+    private static Integer contFKPrePushV = 0;
+    private static Integer contFKperderTiempoV = 0;
+    private static Integer contFKdemoraSalida22V = 0;
+    private static Integer contFKHombrosBajosV = 0;
+    private static Integer contFKDevolverPelotaRuckV = 0;
+    private static Integer contFKSimularsalidaDePelotaV = 0;
+    private static Integer contFKDiferentCantidadJugEnLineV= 0;
+    private static Integer contFKPelotaTorcidaScrumV = 0;
+    private static Integer ContFKVisitante =0;
+
+    public static Integer getContFKVisitante() {
+        return ContFKVisitante;
+    }
+
+    public static void setContFKVisitante(Integer contFKVisitante) {
+        ContFKVisitante = contFKVisitante;
+    }
+
+    public static Integer getContFKPelotaTorcidaScrumV() {
+        return contFKPelotaTorcidaScrumV;
+    }
+
+    public static void setContFKPelotaTorcidaScrumV(Integer contFKPelotaTorcidaScrumV) {
+        GlobalVarables.contFKPelotaTorcidaScrumV = contFKPelotaTorcidaScrumV;
+    }
+
+    public static Integer getContFK1eraLineaV() {
+        return contFK1eraLineaV;
+    }
+
+    public static void setContFK1eraLineaV(Integer contFK1eraLineaV) {
+        GlobalVarables.contFK1eraLineaV = contFK1eraLineaV;
+    }
+
+    private static Integer contFK1eraLineaV = 0;
+
+    public static Integer getContFKPrePushV() {
+        return contFKPrePushV;
+    }
+
+    public static void setContFKPrePushV(Integer contFKPrePushV) {
+        GlobalVarables.contFKPrePushV = contFKPrePushV;
+    }
+
+    public static Integer getContFKperderTiempoV() {
+        return contFKperderTiempoV;
+    }
+
+    public static void setContFKperderTiempoV(Integer contFKperderTiempoV) {
+        GlobalVarables.contFKperderTiempoV = contFKperderTiempoV;
+    }
+
+    public static Integer getContFKdemoraSalida22V() {
+        return contFKdemoraSalida22V;
+    }
+
+    public static void setContFKdemoraSalida22V(Integer contFKdemoraSalida22V) {
+        GlobalVarables.contFKdemoraSalida22V = contFKdemoraSalida22V;
+    }
+
+    public static Integer getContFKHombrosBajosV() {
+        return contFKHombrosBajosV;
+    }
+
+    public static void setContFKHombrosBajosV(Integer contFKHombrosBajosV) {
+        GlobalVarables.contFKHombrosBajosV = contFKHombrosBajosV;
+    }
+
+    public static Integer getContFKDevolverPelotaRuckV() {
+        return contFKDevolverPelotaRuckV;
+    }
+
+    public static void setContFKDevolverPelotaRuckV(Integer contFKDevolverPelotaRuckV) {
+        GlobalVarables.contFKDevolverPelotaRuckV = contFKDevolverPelotaRuckV;
+    }
+
+    public static Integer getContFKSimularsalidaDePelotaV() {
+        return contFKSimularsalidaDePelotaV;
+    }
+
+    public static void setContFKSimularsalidaDePelotaV(Integer contFKSimularsalidaDePelotaV) {
+        GlobalVarables.contFKSimularsalidaDePelotaV = contFKSimularsalidaDePelotaV;
+    }
+
+    public static Integer getContFKDiferentCantidadJugEnLineV() {
+        return contFKDiferentCantidadJugEnLineV;
+    }
+
+    public static void setContFKDiferentCantidadJugEnLineV(Integer contFKDiferentCantidadJugEnLineV) {
+        GlobalVarables.contFKDiferentCantidadJugEnLineV = contFKDiferentCantidadJugEnLineV;
+    }
 
     public static Integer getContFKLocal() {
         return contFKLocal;
@@ -43,15 +134,7 @@ public class GlobalVarables {
         GlobalVarables.contFKLocal = contFKLocal;
     }
 
-    public static Integer getContFKVisitante() {
-        return contFKVisitante;
-    }
 
-    public static void setContFKVisitante(Integer contFKVisitante) {
-        GlobalVarables.contFKVisitante = contFKVisitante;
-    }
-
-    private static Integer contFKVisitante= 0;
 
     public static Integer getContFKperderTiempo() {
         return contFKperderTiempo;

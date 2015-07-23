@@ -213,7 +213,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sumar Local"
-        android:id="@+id/btsumarPenal"
+        android:id="@+id/btsumarLocalFK"
         android:layout_row="9"
         android:layout_column="0"
         android:layout_alignParentBottom="true"
@@ -224,7 +224,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SumarVisitante"
-        android:id="@+id/btSumarV"
+        android:id="@+id/btSumarVisitanteFK"
         android:layout_row="9"
         android:layout_column="16"
         android:layout_alignParentBottom="true"
@@ -237,7 +237,7 @@
         android:id="@+id/txContFKVisitante"
         android:layout_row="9"
         android:layout_column="15"
-        android:layout_above="@+id/btSumarV"
+        android:layout_above="@+id/btSumarVisitanteFK"
         android:layout_alignEnd="@+id/gridLayout"
         android:textColor="#ff040404" />
 
@@ -249,7 +249,7 @@
         android:layout_row="9"
         android:layout_column="5"
         android:layout_alignTop="@+id/txContFKVisitante"
-        android:layout_alignEnd="@+id/btsumarPenal"
+        android:layout_alignEnd="@+id/btsumarLocalFK"
         android:textColor="#ff040404" />
 
 </RelativeLayout>
