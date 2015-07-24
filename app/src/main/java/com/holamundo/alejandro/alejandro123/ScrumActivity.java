@@ -34,12 +34,23 @@ public class ScrumActivity extends Activity {
         rbScrumFavorPerdidoc = (RadioButton) findViewById(R.id.rbSrcumAfavorPerdido);
         rbScrumFavorReseteadoc = (RadioButton) findViewById(R.id.rbScrumAFavorReseteado);
         rbScrumContrac =(RadioButton) findViewById(R.id.rbScrumenContra);
-        rbScrumContraRobadoc = (RadioButton) findViewById(R.id.rbScrumEncontraPerdido);
+        rbScrumContraRobadoc = (RadioButton) findViewById(R.id.rbScrumEnContraRobado);
+        rbScrumContraPerdidoc =(RadioButton) findViewById(R.id.rbScrumEncontraPerdido);
         rbScrumContraReseteadoc = (RadioButton) findViewById(R.id.rbScrumEnContraReseteado);
         btSumarScrum = (Button) findViewById(R.id.btSumarScrum);
         final TextView txAFG = (TextView) findViewById(R.id.txScrumAFGAnado);
         final TextView txAFP = (TextView) findViewById(R.id.txScrumAFPerdido);
         final TextView txAFR = (TextView) findViewById(R.id.txScrumAFReseteado);
+        final TextView txECR = (TextView) findViewById(R.id.txScrumRobado);
+        final TextView txECP = (TextView) findViewById(R.id.txScrumECPerdido);
+        final TextView txECReset = (TextView) findViewById(R.id.txScrumECResetado);
+        txAFG.setText(String.valueOf(g.getContScrumAFGanados()));
+        txAFP.setText(String.valueOf(g.getContScrumAFPerdidos()));
+        txAFR.setText(String.valueOf(g.getContScrumAFReseteados()));
+        txECR.setText(String.valueOf(g.getContScrumECGanados()));
+        txECP.setText(String.valueOf(g.getContScrumECPerdidos()));
+        txECReset.setText(String.valueOf(g.getContScrumECReseteados()));
+
         btSumarScrum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +68,21 @@ public class ScrumActivity extends Activity {
                     if (rbScrumFavorReseteadoc.isChecked()){
                         g.setContScrumAFReseteados(g.getContScrumAFReseteados() + 1);
                         txAFR.setText(String.valueOf(g.getContScrumAFReseteados()));
+                    }
+                }
+                if (rbScrumContrac.isChecked()){
+                    g.setContScrumEnContra(g.getContScrumEnContra() + 1);
+                    if (rbScrumContraRobadoc.isChecked()) {
+                        g.setContScrumECGanados(g.getContScrumECGanados() + 1);
+                        txECR.setText(String.valueOf(g.getContScrumECGanados()));
+                    }
+                    if (rbScrumContraPerdidoc.isChecked()) {
+                        g.setContScrumECPerdidos(g.getContScrumECPerdidos() + 1);
+                        txECP.setText(String.valueOf(g.getContScrumECPerdidos()));
+                    }
+                    if (rbScrumContraReseteadoc.isChecked()) {
+                        g.setContScrumECReseteados(g.getContScrumECReseteados() + 1);
+                        txECReset.setText(String.valueOf(g.getContScrumECReseteados()));
                     }
                 }
             }
