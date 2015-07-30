@@ -28,6 +28,8 @@ public class PenaltysActivity extends Activity{
     private RadioButton rbTackleAlto;
     private RadioButton rbRetener;
     private RadioButton rbTirarseEnElRuck;
+    private RadioButton rbTacleadorNoLibera;
+
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,7 @@ public class PenaltysActivity extends Activity{
         rbTackleAlto = (RadioButton) findViewById(R.id.rbTackleAlto);
         rbRetener = (RadioButton) findViewById(R.id.rbRetener);
         rbTirarseEnElRuck = (RadioButton) findViewById(R.id.rbTirarseEnElRuck);
+        rbTacleadorNoLibera = (RadioButton) findViewById(R.id.rbTacleadorNoLibera);
         txcantPenales.setText(String.valueOf(g.getContpenales()));
         txcantPenalesV.setText(String.valueOf(g.getContpenalesV()));
         btsumar.setOnClickListener(new View.OnClickListener() {
@@ -88,7 +91,9 @@ public class PenaltysActivity extends Activity{
                 if (rbTirarseEnElRuck.isChecked()) {
                     g.setContpenalesTirarseEnElRuck(g.getContpenalesTirarseEnElRuck() + 1);
                 }
-
+                if (rbTacleadorNoLibera.isChecked()) {
+                    g.setContpenalTacleadorNoSuelta(g.getContpenalTacleadorNoSuelta() + 1);
+                }
                 txcantPenales.setText(String.valueOf(g.getContpenales()));
 
             }
@@ -130,6 +135,9 @@ public class PenaltysActivity extends Activity{
                 }
                 if (rbTirarseEnElRuck.isChecked()) {
                     g.setContpenalesTirarseEnElRuckV(g.getContpenalesTirarseEnElRuckV() + 1);
+                }
+                if (rbTacleadorNoLibera.isChecked()) {
+                    g.setContpenalTacleadorNoSueltaV(g.getContpenalTacleadorNoSueltaV() + 1);
                 }
 
                 txcantPenalesV.setText(String.valueOf(g.getContpenalesV()));

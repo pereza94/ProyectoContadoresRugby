@@ -192,6 +192,20 @@
                 android:checked="false"
                 android:textStyle="normal|bold|italic"
                 android:textSize="@dimen/abc_text_size_large_material" />
+
+            <RadioButton
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:text="Tacleador no suelta a tacleado"
+                android:id="@+id/rbTacleadorNoLibera"
+                android:checked="false"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textColor="#ff342c2f"
+                android:textColorHighlight="#ff4c3dff"
+                android:textColorLink="#ff2928ff"
+                android:textStyle="normal|bold|italic"
+                android:singleLine="false"
+                android:longClickable="false" />
         </RadioGroup>
     </LinearLayout>
 

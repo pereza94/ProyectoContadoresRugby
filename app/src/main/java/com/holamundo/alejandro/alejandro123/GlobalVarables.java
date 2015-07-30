@@ -13,6 +13,7 @@ public class GlobalVarables {
     private static Integer contpenalesTackleAlto = 0;
     private static Integer contpenalesTirarseEnElRuck = 0;
     private static Integer contpenaleReteners = 0;
+    private static Integer contpenalTacleadorNoSuelta = 0;
     private static Integer contpenalesV = 0;
     private static Integer contpenalesCargaSinPelotaV = 0;
     private static Integer contpenalesDerrumbeDeMaulV = 0;
@@ -25,9 +26,27 @@ public class GlobalVarables {
     private static Integer contpenalesTackleAltoV = 0;
     private static Integer contpenalesTirarseEnElRuckV = 0;
     private static Integer contpenaleRetenersV = 0;
+    private static Integer contpenalTacleadorNoSueltaV = 0;
     private static Integer contFKPrePush = 0;
     private static Integer contFKperderTiempo = 0;
     private static Integer contFKdemoraSalida22 = 0;
+
+    public static Integer getContpenalTacleadorNoSuelta() {
+        return contpenalTacleadorNoSuelta;
+    }
+
+    public static void setContpenalTacleadorNoSuelta(Integer contpenalTacleadorNoSuelta) {
+        GlobalVarables.contpenalTacleadorNoSuelta = contpenalTacleadorNoSuelta;
+    }
+
+    public static Integer getContpenalTacleadorNoSueltaV() {
+        return contpenalTacleadorNoSueltaV;
+    }
+
+    public static void setContpenalTacleadorNoSueltaV(Integer contpenalTacleadorNoSueltaV) {
+        GlobalVarables.contpenalTacleadorNoSueltaV = contpenalTacleadorNoSueltaV;
+    }
+
     private static Integer contFKHombrosBajos = 0;
     private static Integer contFKDevolverPelotaRuck = 0;
     private static Integer contFKSimularsalidaDePelota = 0;
