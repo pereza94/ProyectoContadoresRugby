@@ -31,6 +31,8 @@ public class GlobalVarables {
     private static Integer contFKperderTiempo = 0;
     private static Integer contFKdemoraSalida22 = 0;
 
+
+
     public static Integer getContpenalTacleadorNoSuelta() {
         return contpenalTacleadorNoSuelta;
     }
@@ -65,6 +67,78 @@ public class GlobalVarables {
     private static Integer ContScrumaFavor = 0;
     private static Integer ContScrumEnContra = 0;
     private static Integer ContScrumAFGanados = 0;
+    private static Integer ContLineAF = 0;
+    private static Integer ContLineAFGanados = 0;
+    private static Integer ContLineAFPerdidos = 0;
+    private static Integer ContLineAFPelotaParcial = 0;
+    private static Integer ContLineEC = 0;
+    private static Integer ContLineECGanados = 0;
+    private static Integer ContLineECPerdidos = 0;
+    private static Integer ContLineECPelotaParcial = 0;
+
+    public static Integer getContLineAF() {
+        return ContLineAF;
+    }
+
+    public static Integer getContLineAFGanados() {
+        return ContLineAFGanados;
+    }
+
+    public static Integer getContLineAFPerdidos() {
+        return ContLineAFPerdidos;
+    }
+
+    public static Integer getContLineAFPelotaParcial() {
+        return ContLineAFPelotaParcial;
+    }
+
+    public static Integer getContLineEC() {
+        return ContLineEC;
+    }
+
+    public static Integer getContLineECGanados() {
+        return ContLineECGanados;
+    }
+
+    public static Integer getContLineECPerdidos() {
+        return ContLineECPerdidos;
+    }
+
+    public static Integer getContLineECPelotaParcial() {
+        return ContLineECPelotaParcial;
+    }
+
+    public static void setContLineAF(Integer contLineAF) {
+        ContLineAF = contLineAF;
+    }
+
+    public static void setContLineAFGanados(Integer contLineAFGanados) {
+        ContLineAFGanados = contLineAFGanados;
+    }
+
+    public static void setContLineAFPerdidos(Integer contLineAFPerdidos) {
+        ContLineAFPerdidos = contLineAFPerdidos;
+    }
+
+    public static void setContLineAFPelotaParcial(Integer contLineAFPelotaParcial) {
+        ContLineAFPelotaParcial = contLineAFPelotaParcial;
+    }
+
+    public static void setContLineEC(Integer contLineEC) {
+        ContLineEC = contLineEC;
+    }
+
+    public static void setContLineECGanados(Integer contLineECGanados) {
+        ContLineECGanados = contLineECGanados;
+    }
+
+    public static void setContLineECPerdidos(Integer contLineECPerdidos) {
+        ContLineECPerdidos = contLineECPerdidos;
+    }
+
+    public static void setContLineECPelotaParcial(Integer contLineECPelotaParcial) {
+        ContLineECPelotaParcial = contLineECPelotaParcial;
+    }
 
     public static Integer getContScrumaFavor() {
         return ContScrumaFavor;

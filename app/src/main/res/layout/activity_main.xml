@@ -46,5 +46,16 @@
         android:background="#ff040449"
         android:textColor="#ffffffff" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" LINE OUT"
+        android:id="@+id/btLines"
+        android:layout_below="@+id/btScrum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textColor="#ffedfff8"
+        android:background="#ffb34439" />
+
 
 </RelativeLayout>
