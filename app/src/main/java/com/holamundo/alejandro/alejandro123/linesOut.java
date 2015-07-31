@@ -3,12 +3,14 @@ package com.holamundo.alejandro.alejandro123;
 import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class linesOut extends Activity {
@@ -22,6 +24,7 @@ public class linesOut extends Activity {
     private RadioButton rbLContraGanadoc;
     private RadioButton rbLContraPerdidoc;
     private RadioButton rbLContraPPc;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,7 @@ public class linesOut extends Activity {
         final TextView txECR = (TextView) findViewById(R.id.txLineRobado);
         final TextView txECP = (TextView) findViewById(R.id.txLineECPerdido);
         final TextView txECReset = (TextView) findViewById(R.id.txLineECPP);
+
         txAFG.setText(String.valueOf(g.getContLineAFGanados()));
         txAFP.setText(String.valueOf(g.getContLineAFPerdidos()));
         txAFR.setText(String.valueOf(g.getContLineAFPelotaParcial()));
@@ -72,7 +76,7 @@ public class linesOut extends Activity {
                 if (rbLContrac.isChecked()){
                     g.setContScrumEnContra(g.getContScrumEnContra() + 1);
                     if (rbLContraGanadoc.isChecked()) {
-                        g.setContLineECGanados(g.getContLineECGanados()+ 1);
+                        g.setContLineECGanados(g.getContLineECGanados() + 1);
                         txECR.setText(String.valueOf(g.getContLineECGanados()));
                     }
                     if (rbLContraPerdidoc.isChecked()) {
@@ -84,11 +88,19 @@ public class linesOut extends Activity {
                         txECReset.setText(String.valueOf(g.getContLineECPelotaParcial()));
                     }
                 }
+
+
             }
         });
     }
 
-    @Override
+
+    public void lanzarToast (View v){
+         Toast sumado = Toast.makeText(getApplicationContext(),"SUMADO!!",Toast.LENGTH_LONG);
+        sumado.setGravity(Gravity.CENTER|Gravity.LEFT,0,0);
+        sumado.show();
+    }
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_lines_out, menu);

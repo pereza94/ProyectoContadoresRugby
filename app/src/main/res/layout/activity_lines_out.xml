@@ -204,7 +204,8 @@
                         android:text="SUMAR"
                         android:id="@+id/btSumarLine"
                         android:layout_gravity="center_horizontal"
-                        android:layout_weight="0.15" />
+                        android:layout_weight="0.15"
+                        android:onClick="lanzarToast"/>
                 </LinearLayout>
             </LinearLayout>
 
