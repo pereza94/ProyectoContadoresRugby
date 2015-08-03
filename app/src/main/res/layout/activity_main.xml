@@ -49,13 +49,23 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" LINE OUT"
+        android:text="@string/lines_out"
         android:id="@+id/btLines"
         android:layout_below="@+id/btScrum"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="54dp"
         android:textColor="#ffedfff8"
         android:background="#ffb34439" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sumar_puntos"
+        android:id="@+id/btSumarPuntos"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/btLines"
+        android:layout_centerHorizontal="true"
+        android:background="#ff005d07" />
 
 
 </RelativeLayout>

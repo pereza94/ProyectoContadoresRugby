@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.holamundo.alejandro.alejandro123.SumaPuntos">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/sumar_puntos"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        android:textColor="#ff5d5d5d"
+        android:textAlignment="textStart" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:id="@+id/linearLayout">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"></FrameLayout>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_try"
+                android:id="@+id/rbSumarTry"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_gravity="center_horizontal"></FrameLayout>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_Converción"
+                android:id="@+id/btSumarConverción"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_gravity="center_horizontal"></FrameLayout>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_Penal"
+                android:id="@+id/btSumarPenal"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_gravity="center_horizontal"></FrameLayout>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_Drop"
+                android:id="@+id/radioButton"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.20">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sumarLocal"
+                android:id="@+id/btSumarLocalPtos"
+                android:layout_gravity="center_vertical"
+                android:background="#ff2622ff"
+                android:textColor="#ffffffff" />
+
+            <FrameLayout
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"></FrameLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sumaVisitante"
+                android:id="@+id/btSumarVisitantePtos"
+                android:layout_gravity="center_vertical"
+                android:background="#ffff7614"
+                android:textColor="#ffffffff" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"></FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txTotalPtosVisitante"
+            android:layout_gravity="right"
+            android:layout_weight="0.20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txTotalPtosLocal"
+            android:layout_weight="0.20" />
+    </LinearLayout>
+
+</RelativeLayout>

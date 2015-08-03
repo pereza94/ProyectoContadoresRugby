@@ -81,7 +81,7 @@ public class linesOut extends Activity {
                     }
                     if (rbLContraPerdidoc.isChecked()) {
                         g.setContLineECPerdidos(g.getContLineECPerdidos() + 1);
-                        txECP.setText(String.valueOf(g.getContScrumECPerdidos()));
+                        txECP.setText(String.valueOf(g.getContLineECPerdidos()));
                     }
                     if (rbLContraPPc.isChecked()) {
                         g.setContLineECPelotaParcial(g.getContLineECPelotaParcial() + 1);
