@@ -29,7 +29,7 @@ public class SumarPuntos extends Activity{
         btsumarLocal =(Button)findViewById(R.id.btSumarLocalPtos);
         btsumarVisitante = (Button) findViewById(R.id.btSumarVisitantePtos);
         rbSumarTry = (RadioButton) findViewById(R.id.rbSumarTry);
-        rbSumarConvercion = (RadioButton) findViewById(R.id.btSumarConverción);
+        rbSumarConvercion = (RadioButton) findViewById(R.id.btSumarConvercion);
         rbSumarPenal = (RadioButton) findViewById(R.id.rbSumarPenal);
         rbSumarDrop = (RadioButton) findViewById(R.id.rbSumarDrop);
         txptosLocal = (TextView) findViewById(R.id.txTotalPtosLocal);
@@ -46,7 +46,7 @@ public class SumarPuntos extends Activity{
                 if (rbSumarConvercion.isChecked()){
                     g.setContPtosLocal(g.getContPtosLocal()+ 2);
                 }
-                if (rbSumarDrop.isChecked()){
+                if (rbSumarPenal.isChecked()){
                     g.setContPtosLocal(g.getContPtosLocal()+ 3);
                 }
                 txptosLocal.setText(String.valueOf(g.getContPtosLocal()));

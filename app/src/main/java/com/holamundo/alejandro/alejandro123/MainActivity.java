@@ -42,9 +42,10 @@ public class MainActivity extends Activity{
         findViewById(R.id.btSumarPuntos).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SumaPuntos.class));
+                startActivity(new Intent(MainActivity.this, SumarPuntos.class));
             }
         });
+
     }
 
     @Override
