@@ -72,9 +72,27 @@ public class GlobalVarables {
     private static Integer ContLineAFPerdidos = 0;
     private static Integer ContLineAFPelotaParcial = 0;
     private static Integer ContLineEC = 0;
+    private static Integer ContLineECPelotaParcial;
     private static Integer ContLineECGanados = 0;
     private static Integer ContLineECPerdidos = 0;
-    private static Integer ContLineECPelotaParcial = 0;
+    private static Integer ContPtosLocal = 0;
+    private static Integer ContPtosVisitante = 0;
+
+    public static Integer getContPtosLocal() {
+        return ContPtosLocal;
+    }
+
+    public static void setContPtosLocal(Integer contPtosLocal) {
+        ContPtosLocal = contPtosLocal;
+    }
+
+    public static Integer getContPtosVisitante() {
+        return ContPtosVisitante;
+    }
+
+    public static void setContPtosVisitante(Integer contPtosVisitante) {
+        ContPtosVisitante = contPtosVisitante;
+    }
 
     public static Integer getContLineAF() {
         return ContLineAF;

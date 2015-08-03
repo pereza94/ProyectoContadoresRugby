@@ -65,7 +65,8 @@
         android:layout_marginTop="54dp"
         android:layout_below="@+id/btLines"
         android:layout_centerHorizontal="true"
-        android:background="#ff005d07" />
+        android:background="#ff005d07"
+        android:textColor="#ffffffff" />
 
 
 </RelativeLayout>

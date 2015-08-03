@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/suma_Penal"
-                android:id="@+id/btSumarPenal"
+                android:id="@+id/rbSumarPenal"
                 android:layout_gravity="center_horizontal"
                 android:checked="false" />
 
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/suma_Drop"
-                android:id="@+id/radioButton"
+                android:id="@+id/rbSumarDrop"
                 android:layout_gravity="center_horizontal"
                 android:checked="false" />
 
@@ -113,7 +113,7 @@
                 android:textColor="#ffffffff" />
 
             <FrameLayout
-                android:layout_width="125dp"
+                android:layout_width="94dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"></FrameLayout>
 
