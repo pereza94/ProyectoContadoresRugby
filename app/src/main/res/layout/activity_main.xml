@@ -11,62 +11,92 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView2" >
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Free Kick"
-            android:id="@+id/btFreeKick"
-            android:layout_marginTop="93dp"
-            android:background="#ffbd6619"
-            android:textColor="#ffffffff"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" />
-    </ScrollView>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SCRUM"
-        android:id="@+id/btScrum"
-        android:layout_marginTop="145dp"
-        android:layout_below="@+id/btPenal"
+        android:id="@+id/scrollView2"
         android:layout_alignParentStart="true"
-        android:background="#ff1fdc1a"
-        android:textColor="#ffffffff" />
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
 
-    <Button
+
+            <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Penal"
         android:id="@+id/btPenal"
-        android:layout_alignParentTop="true"
+                android:background="#ff040449"
+        android:textColor="#ffffffff"
+                android:layout_alignTop="@+id/scrollView2"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCRUM"
+        android:id="@+id/btScrum"
+        android:background="#ff1fdc1a"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/btFreeKick"
         android:layout_alignParentEnd="true"
-        android:background="#ff040449"
-        android:textColor="#ffffffff" />
+        android:layout_marginTop="52dp" />
 
     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free Kick"
+        android:id="@+id/btFreeKick"
+        android:background="#ffbd6619"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/btPenal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp" />
+
+            <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lines_out"
         android:id="@+id/btLines"
-        android:layout_below="@+id/btScrum"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="54dp"
         android:textColor="#ffedfff8"
-        android:background="#ffb34439" />
+        android:background="#ffb34439"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/btScrum"
+        android:layout_alignParentEnd="true" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sumar_puntos"
-        android:id="@+id/btSumarPuntos"
-        android:layout_marginTop="54dp"
-        android:layout_below="@+id/btLines"
-        android:layout_centerHorizontal="true"
-        android:background="#ff005d07"
-        android:textColor="#ffffffff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_gravity="center_horizontal" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView10"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.36" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sumar_puntos"
+                android:id="@+id/btSumarPuntos"
+                android:background="#ff005d07"
+                android:textColor="#ffffffff"
+                android:layout_marginBottom="101dp"
+                android:layout_weight="0.48"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

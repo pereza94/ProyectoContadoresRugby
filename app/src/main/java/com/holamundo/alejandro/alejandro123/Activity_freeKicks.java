@@ -1,6 +1,7 @@
 package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,7 @@ public class Activity_freeKicks extends Activity {
     private RadioButton rbPelotaTorcidaEnElScrum;
     private Button sumarFKlocal;
     private Button sumarFKVisitante;
+    private Button estadisticasFreeKicks;
 
 
 
@@ -45,12 +47,13 @@ public class Activity_freeKicks extends Activity {
         rbInfraccion1raLinea = (RadioButton) findViewById(R.id.rbInfraccion1raLinea);
         rbPelotaTorcidaEnElScrum = (RadioButton) findViewById(R.id.rbPelotaTorcidaEnElScrum);
         sumarFKVisitante = (Button) findViewById(R.id.btVisitanteFk);
+        estadisticasFreeKicks =(Button) findViewById(R.id.btEstadisticasFreeKicks);
         txcontFKVisitante.setText(String.valueOf(g.getContFKVisitante()));
         txcantFKLocal.setText(String.valueOf(g.getContFKLocal()));
         sumarFKVisitante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                            g.setContFKVisitante(g.getContFKVisitante() + 1);
+                g.setContFKVisitante(g.getContFKVisitante() + 1);
                 if (rbPrePush.isChecked()) {
                     g.setContFKPrePushV(g.getContFKPrePushV() + 1);
                 }
@@ -78,14 +81,14 @@ public class Activity_freeKicks extends Activity {
                 if (rbPelotaTorcidaEnElScrum.isChecked()) {
                     g.setContFKPelotaTorcidaScrumV(g.getContFKPelotaTorcidaScrumV() + 1);
                 }
-                            txcontFKVisitante.setText(String.valueOf(g.getContFKVisitante()));
+                txcontFKVisitante.setText(String.valueOf(g.getContFKVisitante()));
             }
         });
 
         sumarFKlocal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                g.setContFKLocal(g.getContFKLocal()+1);
+                g.setContFKLocal(g.getContFKLocal() + 1);
                 if (rbPrePush.isChecked()) {
                     g.setContFKPrePush(g.getContFKPrePush() + 1);
                 }
@@ -115,6 +118,13 @@ public class Activity_freeKicks extends Activity {
                 }
 
                 txcantFKLocal.setText(String.valueOf(g.getContFKLocal()));
+
+            }
+        });
+        estadisticasFreeKicks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Activity_freeKicks.this, ProbandoElScrolldemierda.class));
             }
         });
 

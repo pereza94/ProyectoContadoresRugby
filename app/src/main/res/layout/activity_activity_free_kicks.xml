@@ -5,12 +5,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.holamundo.alejandro.contadorpartidosrugby.ActivityFreKicks"
-    android:background="#fef6f6f6"
     android:visibility="visible"
     android:clickable="true"
     android:id="@+id/layout_Mayor"
     android:weightSum="1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/freekicksignal">
 
 
     <LinearLayout
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="Pre Push"
                 android:id="@+id/rbPrePush"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:text="Perdida de tiempo"
                 android:id="@+id/rbPerdidaDeTiempo"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:text="Demora en la salida de 22 metros"
                 android:id="@+id/rbDemoraSalida22"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:text="Hombros  debajo de la cadera "
                 android:id="@+id/rbCaderasBajasRuck"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:text="Devolver pelota la ruck"
                 android:id="@+id/rbDevolverPelotaAlRuck"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:text="Simular salida de pelota en el ruck/Maul"
                 android:id="@+id/rbSimularSalidaDePelota"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:text="Diferente candidad de jugadores en el line"
                 android:id="@+id/rbCantidadJugadoresLine"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:text="Infracción 1era Linea en el Scrum"
                 android:id="@+id/rbInfraccion1raLinea"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -161,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:text="pelota torcida en el scrum"
                 android:id="@+id/rbPelotaTorcidaEnElScrum"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff0a0909"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -214,5 +214,15 @@
         android:layout_above="@+id/btsumarlocalFK"
         android:layout_alignEnd="@+id/btsumarlocalFK"
         android:textColor="#ff040404" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estadisticas"
+        android:id="@+id/btEstadisticasFreeKicks"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignEnd="@+id/linearLayout3"
+        android:layout_marginTop="34dp" />
 
 </RelativeLayout>
