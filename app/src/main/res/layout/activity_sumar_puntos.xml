@@ -150,7 +150,6 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/txTotalPtosLocal"
-            android:text="0"
             android:layout_weight="1.25" />
 
         <TextView
@@ -158,8 +157,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/txTotalPtosVisitante"
-            android:layout_gravity="right"
-            android:text="0" />
+            android:layout_gravity="right" />
 
     </LinearLayout>
 

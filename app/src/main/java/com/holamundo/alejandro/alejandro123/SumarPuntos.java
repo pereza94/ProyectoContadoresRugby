@@ -46,7 +46,7 @@ public class SumarPuntos extends Activity{
                 if (rbSumarConvercion.isChecked()){
                     g.setContPtosLocal(g.getContPtosLocal()+ 2);
                 }
-                if (rbSumarPenal.isChecked()){
+                if (rbSumarPenal .isChecked()){
                     g.setContPtosLocal(g.getContPtosLocal()+ 3);
                 }
                 txptosLocal.setText(String.valueOf(g.getContPtosLocal()));
