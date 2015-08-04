@@ -4,13 +4,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.holamundo.alejandro.contadorpartidosrugby.ActivityPenales"
-    android:background="#fef6f6f6"
+    tools:context=".ScrumActivity"
     android:visibility="visible"
     android:clickable="true"
     android:id="@+id/layout_Mayor"
     android:weightSum="1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/arbitro_penal">
 
 
     <LinearLayout
@@ -20,21 +20,26 @@
         android:layout_gravity="center_horizontal"
         android:layout_alignParentStart="true"
         android:id="@+id/layoui"
-        android:layout_toStartOf="@+id/gridLayout">
+        android:layout_toStartOf="@+id/gridLayout"
+        android:weightSum="1"
+        android:layout_above="@+id/txContPenales"
+        android:layout_alignParentTop="true">
 
         <RadioGroup
-            android:layout_width="290dp"
-            android:layout_height="431dp"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
             android:showDividers="beginning"
             android:touchscreenBlocksFocus="true"
-            android:checkedButton="@android:integer/config_shortAnimTime">
+            android:checkedButton="@android:integer/config_shortAnimTime"
+            android:layout_weight="0.40"
+            android:gravity="fill_vertical">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Carga sin Pelota"
                 android:id="@+id/rbCargaSinPelota"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff63190a"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -42,14 +47,18 @@
                 android:focusable="true"
                 android:checked="@bool/abc_action_bar_embed_tabs"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Derrumbe de Maul"
                 android:id="@+id/brDerrumbe"
-                android:textColor="#ff363b61"
+                android:textColor="@android:color/holo_green_light"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -57,14 +66,18 @@
                 android:focusable="true"
                 android:checked="true"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Entrada por el costado "
                 android:id="@+id/rbEntradaDeCostado"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff63190a"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -72,14 +85,18 @@
                 android:focusable="true"
                 android:checked="true"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Inconducta"
                 android:id="@+id/rbInconducta"
-                android:textColor="#ff363b61"
+                android:textColor="@android:color/holo_green_light"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -87,14 +104,18 @@
                 android:focusable="true"
                 android:checked="false"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Carga indebida en Line"
                 android:id="@+id/rbLine"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff63190a"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -102,14 +123,18 @@
                 android:focusable="true"
                 android:checked="true"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Manos en el ruck"
                 android:id="@+id/rbManos"
-                android:textColor="#ff363b61"
+                android:textColor="@android:color/holo_green_light"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -117,14 +142,18 @@
                 android:focusable="true"
                 android:checked="true"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Off Side"
                 android:id="@+id/rbOffSide"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff63190a"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -132,14 +161,18 @@
                 android:focusable="true"
                 android:checked="false"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Scrum"
                 android:id="@+id/rbScrum"
-                android:textColor="#ff363b61"
+                android:textColor="@android:color/holo_green_light"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -147,14 +180,18 @@
                 android:focusable="true"
                 android:checked="false"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tackle Alto"
                 android:id="@+id/rbTackleAlto"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff63190a"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -162,14 +199,18 @@
                 android:focusable="true"
                 android:checked="true"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Retención"
                 android:id="@+id/rbRetener"
-                android:textColor="#ff363b61"
+                android:textColor="@android:color/holo_green_light"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -177,14 +218,18 @@
                 android:focusable="true"
                 android:checked="false"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="325dp"
                 android:layout_height="wrap_content"
                 android:text="Tirarse en el Ruck"
                 android:id="@+id/rbTirarseEnElRuck"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff63190a"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -192,7 +237,11 @@
                 android:focusable="true"
                 android:checked="false"
                 android:textStyle="normal|bold|italic"
-                android:textSize="@dimen/abc_text_size_large_material" />
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
 
             <RadioButton
                 android:layout_width="216dp"
@@ -200,14 +249,32 @@
                 android:text="Tacleador no suelta a tacleado"
                 android:id="@+id/rbTacleadorNoLibera"
                 android:checked="false"
-                android:textSize="@dimen/abc_text_size_large_material"
-                android:textColor="#ff363b61"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:textColor="@android:color/holo_green_light"
                 android:textColorHighlight="#ff4c3dff"
                 android:textColorLink="#ff2928ff"
                 android:textStyle="normal|bold|italic"
                 android:singleLine="false"
-                android:longClickable="false" />
+                android:longClickable="false"
+                android:gravity="top|left|bottom|fill_vertical|start|end|center_horizontal"
+                android:hint="@string/abc_searchview_description_search"
+                android:labelFor="@integer/abc_max_action_buttons"
+                android:lines="@android:integer/status_bar_notification_info_maxnum" />
+
         </RadioGroup>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Estadisticas"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txContPenales"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_gravity="center_vertical" />
+
     </LinearLayout>
 
     <GridLayout
@@ -233,7 +300,9 @@
         android:layout_row="9"
         android:layout_column="0"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffffff"
+        android:background="@android:color/holo_green_dark" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -244,7 +313,9 @@
         android:layout_row="9"
         android:layout_column="16"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffffff"
+        android:background="@android:color/holo_orange_dark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -255,7 +326,7 @@
         android:layout_column="15"
         android:layout_above="@+id/btSumarVisitantePenal"
         android:layout_alignEnd="@+id/gridLayout"
-        android:textColor="#ff040404" />
+        android:textColor="@android:color/holo_orange_dark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -266,7 +337,22 @@
         android:layout_column="5"
         android:layout_alignTop="@+id/txContFKVisitante"
         android:layout_alignEnd="@+id/btsumarLocalPenal"
-        android:textColor="#ff040404" />
+        android:textColor="@android:color/holo_green_dark" />
+
+    <android.gesture.GestureOverlayView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gestureOverlayView"
+        android:layout_alignBottom="@+id/layoui"
+        android:layout_toEndOf="@+id/txContFKVisitante"
+        android:layout_marginStart="37dp"></android.gesture.GestureOverlayView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/gestureOverlayView"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
 

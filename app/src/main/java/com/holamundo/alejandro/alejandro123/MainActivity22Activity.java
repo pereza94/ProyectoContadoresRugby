@@ -62,7 +62,7 @@ public class MainActivity22Activity extends Activity {
         pTacleadorNoSeAleja = (TextView)findViewById(R.id.txTacleadorNoSueltaLocal);
         pTacleadorNoSeAlejaVisitante = (TextView)findViewById(R.id.txTacleadorNoSueltaVisitante);
         pTotalPenales =(TextView) findViewById(R.id.txTotalPenalesLocal);
-        pTotalPenalesVisitante =(TextView) findViewById(R.id.txtotalpenalesVisitante);
+        pTotalPenalesVisitante =(TextView) findViewById(R.id.txTotalPenalesVisitante);
         pcargasinpelota.setText(String.valueOf(g.getContpenalesCargaSinPelota()));
         pcargasinpelotaVisitante.setText(String.valueOf(g.getContpenalesCargaSinPelotaV()));
         pDerrumbeMaul.setText(String.valueOf(g.getContpenalesDerrumbeDeMaul()));

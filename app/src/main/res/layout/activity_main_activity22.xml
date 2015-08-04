@@ -1,6 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="#020099cc"
+    android:layout_height="match_parent" android:background="@drawable/autumn_rugby_by_bradderz"
     tools:context="com.holamundo.alejandro.alejandro123.MostrarEstadisticasPenales"
     android:scrollbars="horizontal|vertical">
 
@@ -18,7 +18,8 @@
         android:text="Local"
         android:id="@+id/textView4"
         android:layout_gravity="left|top"
-        android:textStyle="normal|bold" />
+        android:textStyle="normal|bold"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,7 +60,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txCargaSinPelotaLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -67,7 +69,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txDerrumbeMaulLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -75,7 +78,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txEntradaCostadoLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -83,7 +87,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txCargaEnElLineLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -91,7 +96,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txManosEnElRuckLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -99,7 +105,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txOffSideLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -107,7 +114,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txScrumPenalLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -115,7 +123,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTacleAltoLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -123,7 +132,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txRetencionLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -131,7 +141,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTirarseRuckLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
             android:layout_width="70dp"
@@ -139,16 +150,17 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTacleadorNoSueltaLocal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff171771" />
 
         <TextView
-            android:layout_width="133dp"
+            android:layout_width="89dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTotalPenalesLocal"
             android:gravity="center_vertical|center_horizontal|right"
-            android:textColor="#ff8e0006" />
+            android:textColor="#ff710e12" />
 
     </LinearLayout>
 
@@ -174,7 +186,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Carga sin Pelota"
             android:id="@+id/textView18"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -182,7 +195,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Derrumbe de Maul"
             android:id="@+id/textView19"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -190,7 +204,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Entrada de costado"
             android:id="@+id/textView20"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -198,7 +213,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Carga en el Line"
             android:id="@+id/textView21"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -206,7 +222,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Manos en el Ruck"
             android:id="@+id/textView22"
-            android:layout_gravity="center_horizontal|top" />
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -214,7 +231,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Off Side"
             android:id="@+id/textView23"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -222,7 +240,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Penal en el Scrum"
             android:id="@+id/textView24"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -230,7 +249,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Tackle Alto"
             android:id="@+id/textView25"
-            android:layout_gravity="center_horizontal|top" />
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -238,7 +258,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Retención"
             android:id="@+id/textView26"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -246,7 +267,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="De cabeza en el Ruck"
             android:id="@+id/textView27"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -254,7 +276,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Tacleador no se aleja"
             android:id="@+id/textView28"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff1f2071" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -263,7 +286,7 @@
             android:text="   TOTAL"
             android:id="@+id/textView8"
             android:layout_gravity="center_horizontal"
-            android:textColor="#ff8e0006" />
+            android:textColor="#ff711b15" />
 
     </LinearLayout>
 
@@ -286,7 +309,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txCargaSinPelotaVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -294,7 +318,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txDerrumbeMaulVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -302,7 +327,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txEntradaDeCostadoVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -310,7 +336,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txCagaLineVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -318,7 +345,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txManosEnElRuckVisistante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -326,7 +354,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txOffsideVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -334,7 +363,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txScrumPenalVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -342,7 +372,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTacleAltoVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -350,7 +381,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txRetencionVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -358,7 +390,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTirarseEnRuckVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
             android:layout_width="93dp"
@@ -366,16 +399,17 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTacleadorNoSueltaVisitante"
-            android:gravity="right" />
+            android:gravity="right"
+            android:textColor="#ff231d71" />
 
         <TextView
-            android:layout_width="148dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
-            android:id="@+id/txtotalpenalesVisitante"
-            android:gravity="left|right"
-            android:textColor="#ff8e0006" />
+            android:id="@+id/txTotalPenalesVisitante"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff710909" />
 
     </LinearLayout>
 

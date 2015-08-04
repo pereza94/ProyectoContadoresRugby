@@ -32,7 +32,6 @@ public class PenaltysActivity extends Activity{
     private RadioButton rbTacleadorNoLibera;
 
 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final GlobalVarables g = new GlobalVarables();
@@ -144,7 +143,13 @@ public class PenaltysActivity extends Activity{
                 txcantPenalesV.setText(String.valueOf(g.getContpenalesV()));
             }
         });
-        
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PenaltysActivity.this, MainActivity22Activity.class));
+            }
+        });
+
     }
 
 
