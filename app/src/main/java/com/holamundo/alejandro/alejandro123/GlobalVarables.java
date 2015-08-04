@@ -72,7 +72,7 @@ public class GlobalVarables {
     private static Integer ContLineAFPerdidos = 0;
     private static Integer ContLineAFPelotaParcial = 0;
     private static Integer ContLineEC = 0;
-    private static Integer ContLineECPelotaParcial;
+    private static Integer ContLineECPelotaParcial = 0;
     private static Integer ContLineECGanados = 0;
     private static Integer ContLineECPerdidos = 0;
     private static Integer ContPtosLocal = 0;

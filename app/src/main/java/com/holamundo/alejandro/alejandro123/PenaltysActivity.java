@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class PenaltysActivity extends Activity{
@@ -95,6 +96,13 @@ public class PenaltysActivity extends Activity{
                     g.setContpenalTacleadorNoSuelta(g.getContpenalTacleadorNoSuelta() + 1);
                 }
                 txcantPenales.setText(String.valueOf(g.getContpenales()));
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Penal sumado correctamente !!!",
+                        Toast.LENGTH_SHORT);
+                toast.setDuration(Toast.LENGTH_SHORT);
+
+                toast.show();
+                startActivity(new Intent(PenaltysActivity.this, MainActivity.class));
 
             }
         });
@@ -141,6 +149,13 @@ public class PenaltysActivity extends Activity{
                 }
 
                 txcantPenalesV.setText(String.valueOf(g.getContpenalesV()));
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Penal sumado correctamente !!!",
+                        Toast.LENGTH_SHORT);
+                toast.setDuration(Toast.LENGTH_SHORT);
+
+                toast.show();
+                startActivity(new Intent(PenaltysActivity.this, MainActivity.class));
             }
         });
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
@@ -149,6 +164,8 @@ public class PenaltysActivity extends Activity{
                 startActivity(new Intent(PenaltysActivity.this, MainActivity22Activity.class));
             }
         });
+
+
 
     }
 

@@ -14,16 +14,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Local"
-        android:id="@+id/textView4"
-        android:layout_gravity="left|top"
-        android:textStyle="normal|bold"
-        android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView5"
         android:layout_gravity="center_horizontal|top" />
@@ -41,7 +31,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="426dp"
+        android:layout_height="416dp"
         android:layout_gravity="left"
         android:id="@+id/layoutsinid"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
@@ -49,10 +39,13 @@
         android:scrollbars="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView7" />
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Local"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="70dp"
@@ -154,13 +147,13 @@
             android:textColor="#ff171771" />
 
         <TextView
-            android:layout_width="89dp"
+            android:layout_width="69dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTotalPenalesLocal"
-            android:gravity="center_vertical|center_horizontal|right"
-            android:textColor="#ff710e12" />
+            android:textColor="#ff710e12"
+            android:gravity="center" />
 
     </LinearLayout>
 
@@ -293,7 +286,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="109dp"
-        android:layout_height="302dp"
+        android:layout_height="384dp"
         android:layout_gravity="right|top"
         android:scrollbars="vertical">
 
@@ -403,13 +396,14 @@
             android:textColor="#ff231d71" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="0"
             android:id="@+id/txTotalPenalesVisitante"
             android:layout_gravity="center_horizontal"
-            android:textColor="#ff710909" />
+            android:textColor="#ff710909"
+            android:gravity="right|center_horizontal" />
 
     </LinearLayout>
 

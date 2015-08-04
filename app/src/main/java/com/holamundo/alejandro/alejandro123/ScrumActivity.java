@@ -1,6 +1,7 @@
 package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.renderscript.Sampler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class ScrumActivity extends Activity {
@@ -23,6 +25,13 @@ public class ScrumActivity extends Activity {
     private RadioButton rbScrumContraRobadoc;
     private RadioButton rbScrumContraPerdidoc;
     private RadioButton rbScrumContraReseteadoc;
+    private TextView sumado;
+    public void esperar (int segundos) {
+        try {
+            Thread.sleep (segundos*1000);
+        } catch (Exception e) {
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +47,8 @@ public class ScrumActivity extends Activity {
         rbScrumContraPerdidoc =(RadioButton) findViewById(R.id.rbScrumEncontraPerdido);
         rbScrumContraReseteadoc = (RadioButton) findViewById(R.id.rbScrumEnContraReseteado);
         btSumarScrum = (Button) findViewById(R.id.btSumarScrum);
+        sumado = (TextView) findViewById(R.id.txExitoSumado);
+        sumado.setText("");
         final TextView txAFG = (TextView) findViewById(R.id.txScrumAFGAnado);
         final TextView txAFP = (TextView) findViewById(R.id.txScrumAFPerdido);
         final TextView txAFR = (TextView) findViewById(R.id.txScrumAFReseteado);
@@ -69,6 +80,13 @@ public class ScrumActivity extends Activity {
                         g.setContScrumAFReseteados(g.getContScrumAFReseteados() + 1);
                         txAFR.setText(String.valueOf(g.getContScrumAFReseteados()));
                     }
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Scrum sumado correctamente !!!",
+                            Toast.LENGTH_SHORT);
+                    toast.setDuration(Toast.LENGTH_SHORT);
+
+                    toast.show();
+                    startActivity(new Intent(ScrumActivity.this, MainActivity.class));
                 }
                 if (rbScrumContrac.isChecked()){
                     g.setContScrumEnContra(g.getContScrumEnContra() + 1);
@@ -84,8 +102,26 @@ public class ScrumActivity extends Activity {
                         g.setContScrumECReseteados(g.getContScrumECReseteados() + 1);
                         txECReset.setText(String.valueOf(g.getContScrumECReseteados()));
                     }
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Scrum sumado correctamente !!!",
+                            Toast.LENGTH_SHORT);
+                    toast.setDuration(Toast.LENGTH_SHORT);
+
+                    toast.show();
+                    startActivity(new Intent(ScrumActivity.this, MainActivity.class));
                 }
-            }
+
+               rbScrumFavorc.setChecked(false);
+               rbScrumFavorGanadoc.setChecked(false);
+               rbScrumFavorPerdidoc.setChecked(false);
+               rbScrumFavorReseteadoc.setChecked(false);
+               rbScrumContrac.setChecked(false);
+               rbScrumContraRobadoc.setChecked(false);
+                rbScrumContraPerdidoc.setChecked(false);
+                rbScrumContraReseteadoc.setChecked(false);
+
+
+                }
         });
 
 

@@ -41,7 +41,8 @@
                     android:id="@+id/rbScrumAFavorGanado"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="3.67"
-                    android:textColor="#ff088019" />
+                    android:textColor="#ff088019"
+                    android:checked="false" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -206,6 +207,16 @@
                         android:layout_weight="0.15" />
                 </LinearLayout>
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/txExitoSumado"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff0d550f"
+                android:textStyle="normal|bold"
+                android:visibility="visible" />
 
         </RadioGroup>
 

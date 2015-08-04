@@ -1,6 +1,7 @@
 package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -72,6 +73,13 @@ public class linesOut extends Activity {
                         g.setContLineAFPelotaParcial(g.getContLineAFPelotaParcial() + 1);
                         txAFR.setText(String.valueOf(g.getContLineAFPelotaParcial()));
                     }
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Line Out sumado correctamente !!!",
+                            Toast.LENGTH_SHORT);
+                    toast.setDuration(Toast.LENGTH_SHORT);
+
+                    toast.show();
+                    startActivity(new Intent(linesOut.this, MainActivity.class));
                 }
                 if (rbLContrac.isChecked()){
                     g.setContScrumEnContra(g.getContScrumEnContra() + 1);
@@ -87,7 +95,23 @@ public class linesOut extends Activity {
                         g.setContLineECPelotaParcial(g.getContLineECPelotaParcial() + 1);
                         txECReset.setText(String.valueOf(g.getContLineECPelotaParcial()));
                     }
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Line Out sumado correctamente !!!",
+                            Toast.LENGTH_SHORT);
+                    toast.setDuration(Toast.LENGTH_SHORT);
+
+                    toast.show();
+                    startActivity(new Intent(linesOut.this, MainActivity.class));
                 }
+                rbLFavorc.setChecked(false);
+                rbLFavorGanadoc.setChecked(false);
+                rbLFavorPerdidoc.setChecked(false);
+                rbLFavorPPc.setChecked(false);
+                rbLContrac.setChecked(false);
+                rbLContraGanadoc.setChecked(false);
+                rbLContraPerdidoc.setChecked(false);
+                rbLContraPPc.setChecked(false);
+
 
 
             }
