@@ -18,12 +18,13 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_alignEnd="@+id/gridLayout"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/layoui"
+        android:layout_toStartOf="@+id/gridLayout">
 
         <RadioGroup
-            android:layout_width="341dp"
-            android:layout_height="411dp"
+            android:layout_width="290dp"
+            android:layout_height="431dp"
             android:showDividers="beginning"
             android:touchscreenBlocksFocus="true"
             android:checkedButton="@android:integer/config_shortAnimTime">
@@ -48,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:text="Derrumbe de Maul"
                 android:id="@+id/brDerrumbe"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff363b61"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -78,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:text="Inconducta"
                 android:id="@+id/rbInconducta"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff363b61"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -108,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:text="Manos en el ruck"
                 android:id="@+id/rbManos"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff363b61"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -138,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:text="Scrum"
                 android:id="@+id/rbScrum"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff363b61"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -168,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:text="Retención"
                 android:id="@+id/rbRetener"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff363b61"
                 android:textColorHighlight="#ff4c3dff"
                 android:visibility="visible"
                 android:textColorLink="#ff2928ff"
@@ -200,7 +201,7 @@
                 android:id="@+id/rbTacleadorNoLibera"
                 android:checked="false"
                 android:textSize="@dimen/abc_text_size_large_material"
-                android:textColor="#ff342c2f"
+                android:textColor="#ff363b61"
                 android:textColorHighlight="#ff4c3dff"
                 android:textColorLink="#ff2928ff"
                 android:textStyle="normal|bold|italic"
@@ -218,7 +219,8 @@
         android:layoutMode="opticalBounds"
         android:importantForAccessibility="yes"
         android:layout_weight="1"
-        android:id="@+id/gridLayout">
+        android:id="@+id/gridLayout"
+        android:layout_toEndOf="@+id/btSumarVisitantePenal">
 
     </GridLayout>
 
