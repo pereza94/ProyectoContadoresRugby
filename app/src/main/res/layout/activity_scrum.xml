@@ -6,9 +6,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.holamundo.alejandro.alejandro123.ScrumActivity"
     android:background="@drawable/scrum">
-    <AbsoluteLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,7 +28,8 @@
                 android:id="@+id/rbScrumAFavor"
                 android:layout_gravity="center_horizontal"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffffff" />
+                android:textColor="#ffffffff"
+                android:checked="true" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -89,31 +88,24 @@
                     android:layout_weight="0.51"
                     android:textStyle="normal|bold"
                     android:textAlignment="center"
-                    android:typeface="serif" />
+                    android:typeface="serif"
+                    android:textColor="#ffffffff" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:id="@+id/txScrumAFPerdido"
-                    android:layout_weight="0.37" />
+                    android:layout_weight="0.37"
+                    android:textColor="#ffffffff" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:id="@+id/txScrumAFReseteado" />
+                    android:id="@+id/txScrumAFReseteado"
+                    android:textColor="#ffffffff" />
             </LinearLayout>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="91dp"
-                android:text="Scrum en Contra"
-                android:id="@+id/rbScrumenContra"
-                android:layout_gravity="center"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:checked="false"
-                android:textColor="#ffffffff" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -121,31 +113,6 @@
                 android:orientation="horizontal"
                 android:id="@+id/RadioGroupEnContra"
                 android:weightSum="1">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Robado"
-                    android:id="@+id/rbScrumEnContraRobado"
-                    android:textColor="#ffffffff"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="0.49" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Perdido"
-                    android:id="@+id/rbScrumEncontraPerdido"
-                    android:textColor="#ffffffff"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="0.35" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Reseteado"
-                    android:id="@+id/rbScrumEnContraReseteado"
-                    android:textColor="#ffffffff" />
 
             </RadioGroup>
 
@@ -162,25 +129,15 @@
                     android:id="@+id/textView3"
                     android:layout_weight="0.26" />
 
-                <TextView
+                <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:id="@+id/txScrumRobado"
-                    android:layout_weight="0.35" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:id="@+id/txScrumECPerdido"
-                    android:layout_weight="0.34" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:id="@+id/txScrumECResetado" />
+                    android:text="Scrum en Contra"
+                    android:id="@+id/rbScrumenContra"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:checked="true"
+                    android:textColor="#ffffffff"
+                    android:layout_weight="0.26" />
 
             </LinearLayout>
 
@@ -196,12 +153,65 @@
                     android:layout_gravity="center_horizontal"
                     android:orientation="vertical"
                     android:weightSum="1">
-
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:layout_weight="0.55"></FrameLayout>
+                        android:layout_weight="0.55">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reseteado"
+                            android:id="@+id/rbScrumEnContraReseteado"
+                            android:textColor="#ffffffff"
+                            android:layout_gravity="right|center_vertical" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Robado"
+                            android:id="@+id/rbScrumEnContraRobado"
+                            android:textColor="#ffffffff"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="0.49" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perdido"
+                            android:id="@+id/rbScrumEncontraPerdido"
+                            android:textColor="#ffffffff"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.35" />
+
+                        <TextView
+                            android:layout_width="22dp"
+                            android:layout_height="24dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/txScrumECResetado"
+                            android:layout_weight="0.11"
+                            android:layout_gravity="right|bottom"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/txScrumECPerdido"
+                            android:layout_weight="0.34"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:layout_width="23dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/txScrumRobado"
+                            android:layout_weight="0.35"
+                            android:layout_gravity="left|bottom"
+                            android:textColor="#ffffffff" />
+                    </FrameLayout>
 
                     <Button
                         android:layout_width="wrap_content"
@@ -226,5 +236,5 @@
         </RadioGroup>
 
     </FrameLayout>
-    </AbsoluteLayout>
+
 </RelativeLayout>
