@@ -1,6 +1,7 @@
 package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class SumarPuntos extends Activity{
@@ -34,6 +36,8 @@ public class SumarPuntos extends Activity{
         rbSumarDrop = (RadioButton) findViewById(R.id.rbSumarDrop);
         txptosLocal = (TextView) findViewById(R.id.txTotalPtosLocal);
         txptosVisitante = (TextView) findViewById(R.id.txTotalPtosVisitante);
+        txptosVisitante.setText(String.valueOf(g.getContPtosVisitante()));
+        txptosLocal.setText(String.valueOf(g.getContPtosLocal()));
         btsumarLocal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +54,13 @@ public class SumarPuntos extends Activity{
                     g.setContPtosLocal(g.getContPtosLocal()+ 3);
                 }
                 txptosLocal.setText(String.valueOf(g.getContPtosLocal()));
+                startActivity(new Intent(SumarPuntos.this, MainActivity.class));
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Puntos sumados correctamente !!!",
+                        Toast.LENGTH_SHORT);
+                toast.setDuration(Toast.LENGTH_SHORT);
+
+                toast.show();
             }
         });
         btsumarVisitante.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +79,13 @@ public class SumarPuntos extends Activity{
                     g.setContPtosVisitante(g.getContPtosVisitante() + 2);
                 }
                 txptosVisitante.setText(String.valueOf(g.getContPtosVisitante()));
+                startActivity(new Intent(SumarPuntos.this, MainActivity.class));
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Puntos sumados correctamente !!!",
+                        Toast.LENGTH_SHORT);
+                toast.setDuration(Toast.LENGTH_SHORT);
+
+                toast.show();
             }
         });
     }

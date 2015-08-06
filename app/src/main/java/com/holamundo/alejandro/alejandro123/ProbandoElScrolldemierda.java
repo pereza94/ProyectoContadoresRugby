@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class ProbandoElScrolldemierda extends Activity{
@@ -81,7 +82,12 @@ public class ProbandoElScrolldemierda extends Activity{
         txPelotatorcidaenelScrumVisitante.setText(String.valueOf(g.getContFKPelotaTorcidaScrumV()));
         txTotalFKLocal.setText(String.valueOf(g.getContFKLocal()));
         txToalfkVisitante.setText(String.valueOf(g.getContFKVisitante()));
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Deslizar para ver TOTAL",
+                Toast.LENGTH_SHORT);
+        toast.setDuration(Toast.LENGTH_SHORT);
 
+        toast.show();
 
     }
 

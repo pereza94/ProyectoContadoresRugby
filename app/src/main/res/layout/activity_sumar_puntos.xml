@@ -4,7 +4,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.holamundo.alejandro.alejandro123.SumaPuntos">
+    tools:context="com.holamundo.alejandro.alejandro123.SumaPuntos"
+    android:background="@drawable/zzzzzz">
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,7 +45,8 @@
                 android:text="@string/suma_try"
                 android:id="@+id/rbSumarTry"
                 android:layout_gravity="center_horizontal"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="#ffffffff" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -57,7 +59,8 @@
                 android:text="@string/suma_Converción"
                 android:id="@+id/btSumarConvercion"
                 android:layout_gravity="center_horizontal"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="#ffffffff" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -70,7 +73,8 @@
                 android:text="@string/suma_Penal"
                 android:id="@+id/rbSumarPenal"
                 android:layout_gravity="center_horizontal"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="#ffffffff" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -83,7 +87,8 @@
                 android:text="@string/suma_Drop"
                 android:id="@+id/rbSumarDrop"
                 android:layout_gravity="center_horizontal"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="#ffffffff" />
 
         </RadioGroup>
     </LinearLayout>
@@ -151,7 +156,8 @@
         android:text="0"
         android:gravity="right"
         android:layout_below="@+id/btSumarLocalPtos"
-        android:layout_toEndOf="@+id/textView11" />
+        android:layout_toEndOf="@+id/textView11"
+        android:textColor="#ffffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -159,7 +165,8 @@
         android:text="LOCAL"
         android:id="@+id/textView11"
         android:layout_alignTop="@+id/txTotalPtosLocal"
-        android:layout_toStartOf="@+id/textView2" />
+        android:layout_toStartOf="@+id/textView2"
+        android:textColor="#ffffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -168,7 +175,8 @@
         android:text="-"
         android:id="@+id/textView12"
         android:layout_alignBottom="@+id/txTotalPtosLocal"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff" />
 
     <TextView
         android:layout_width="127dp"
@@ -179,7 +187,8 @@
         android:text="0"
         android:layout_marginStart="13dp"
         android:layout_alignTop="@+id/textView13"
-        android:layout_toEndOf="@+id/textView12" />
+        android:layout_toEndOf="@+id/textView12"
+        android:textColor="#ffffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -187,6 +196,7 @@
         android:text="VISITANTE"
         android:id="@+id/textView13"
         android:layout_alignTop="@+id/textView12"
-        android:layout_alignEnd="@+id/btSumarVisitantePtos" />
+        android:layout_alignEnd="@+id/btSumarVisitantePtos"
+        android:textColor="#ffffffff" />
 
 </RelativeLayout>
