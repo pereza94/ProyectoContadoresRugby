@@ -1,11 +1,13 @@
 package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity22Activity extends Activity {
@@ -39,6 +41,7 @@ public class MainActivity22Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity22);
         GlobalVarables g = new GlobalVarables();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         pcargasinpelota = (TextView) findViewById(R.id.txCargaSinPelotaLocal);
         pcargasinpelotaVisitante = (TextView) findViewById(R.id.txCargaSinPelotaVisitante);
         pDerrumbeMaul = (TextView) findViewById(R.id.txDerrumbeMaulLocal);
@@ -87,6 +90,12 @@ public class MainActivity22Activity extends Activity {
         pTacleadorNoSeAlejaVisitante.setText(String.valueOf(g.getContpenalTacleadorNoSueltaV()));
         pTotalPenales.setText(String.valueOf(g.getContpenales()));
         pTotalPenalesVisitante.setText(String.valueOf(g.getContpenalesV()));
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Deslizar para ver TOTAL",
+                Toast.LENGTH_SHORT);
+        toast.setDuration(Toast.LENGTH_SHORT);
+
+        toast.show();
 
     }
 

@@ -2,6 +2,7 @@ package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,6 +35,7 @@ public class Activity_freeKicks extends Activity {
         setContentView(R.layout.activity_activity_free_kicks);
         final GlobalVarables g = new GlobalVarables();
         setContentView(R.layout.activity_activity_free_kicks);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         final TextView txcontFKVisitante = (TextView) findViewById(R.id.txSumaFKVisitatne);
         final TextView txcantFKLocal = (TextView) findViewById(R.id.txSumaLocal);
         sumarFKlocal = (Button)findViewById(R.id.btsumarlocalFK);

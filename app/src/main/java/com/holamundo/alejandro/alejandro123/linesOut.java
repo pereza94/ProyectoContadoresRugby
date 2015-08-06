@@ -2,6 +2,7 @@ package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -32,6 +33,7 @@ public class linesOut extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lines_out);
         final GlobalVarables g = new GlobalVarables();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         rbLFavorc = (RadioButton)findViewById(R.id.rbLineAFavor);
         rbLFavorGanadoc = (RadioButton)findViewById(R.id.rbLineFAvorGanado);
         rbLFavorPerdidoc = (RadioButton) findViewById(R.id.rbLineFAvorPerdido);

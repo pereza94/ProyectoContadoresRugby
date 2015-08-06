@@ -2,6 +2,7 @@ package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,6 +38,7 @@ public class PenaltysActivity extends Activity{
         super.onCreate(savedInstanceState);
         final GlobalVarables g = new GlobalVarables();
         setContentView(R.layout.activity_penaltys);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         final TextView txcantPenales = (TextView) findViewById(R.id.txContPenales);
         final TextView txcantPenalesV = (TextView) findViewById(R.id.txContFKVisitante);
         btsumar = (Button) findViewById(R.id.btsumarLocalPenal);

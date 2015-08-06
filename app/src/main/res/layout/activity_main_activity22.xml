@@ -10,401 +10,417 @@
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textView5"
-        android:layout_gravity="center_horizontal|top" />
-
-    <TextView
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Visitante"
-        android:id="@+id/textView6"
-        android:layout_gravity="right|top"
-        android:gravity="right"
-        android:textStyle="normal|bold" />
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="416dp"
-        android:layout_gravity="left"
-        android:id="@+id/layoutsinid"
-        android:scrollbarAlwaysDrawHorizontalTrack="true"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        android:scrollbars="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Local"
-            android:id="@+id/textView4"
-            android:gravity="center_horizontal"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txCargaSinPelotaLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txDerrumbeMaulLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txEntradaCostadoLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txCargaEnElLineLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txManosEnElRuckLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txOffSideLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txScrumPenalLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTacleAltoLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txRetencionLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTirarseRuckLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTacleadorNoSueltaLocal"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff171771" />
-
-        <TextView
-            android:layout_width="69dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTotalPenalesLocal"
-            android:textColor="#ff710e12"
-            android:gravity="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="174dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
-        android:scrollbars="vertical">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Penales"
-            android:id="@+id/textView17"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal|top" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="416dp"
+            android:layout_gravity="left"
+            android:id="@+id/layoutsinid"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:layout_x="5dp"
+            android:layout_y="11dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Local"
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txCargaSinPelotaLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txDerrumbeMaulLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffb4b4b4" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txEntradaCostadoLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txCargaEnElLineLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffb4b4b4" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txManosEnElRuckLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txOffSideLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffb4b4b4" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txScrumPenalLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txTacleAltoLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffb4b4b4" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txRetencionLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txTirarseRuckLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffb4b4b4" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txTacleadorNoSueltaLocal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txTotalPenalesLocal"
+                android:textColor="#ffd80404"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top"
-            android:textStyle="normal|bold" />
+            android:scrollbars="vertical"
+            android:layout_x="221dp"
+            android:layout_y="2dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Carga sin Pelota"
-            android:id="@+id/textView18"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Penales"
+                android:id="@+id/textView17"
+                android:layout_gravity="center_horizontal|top"
+                android:textStyle="normal|bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Derrumbe de Maul"
-            android:id="@+id/textView19"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Carga sin Pelota"
+                android:id="@+id/textView18"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Entrada de costado"
-            android:id="@+id/textView20"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Derrumbe de Maul"
+                android:id="@+id/textView19"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Carga en el Line"
-            android:id="@+id/textView21"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Entrada de costado"
+                android:id="@+id/textView20"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Manos en el Ruck"
-            android:id="@+id/textView22"
-            android:layout_gravity="center_horizontal|top"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Carga en el Line"
+                android:id="@+id/textView21"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Off Side"
-            android:id="@+id/textView23"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Manos en el Ruck"
+                android:id="@+id/textView22"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Penal en el Scrum"
-            android:id="@+id/textView24"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Off Side"
+                android:id="@+id/textView23"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Tackle Alto"
-            android:id="@+id/textView25"
-            android:layout_gravity="center_horizontal|top"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Penal en el Scrum"
+                android:id="@+id/textView24"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Retención"
-            android:id="@+id/textView26"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tackle Alto"
+                android:id="@+id/textView25"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="De cabeza en el Ruck"
-            android:id="@+id/textView27"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Retención"
+                android:id="@+id/textView26"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Tacleador no se aleja"
-            android:id="@+id/textView28"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff1f2071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="De cabeza en el Ruck"
+                android:id="@+id/textView27"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="   TOTAL"
-            android:id="@+id/textView8"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff711b15" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tacleador no se aleja"
+                android:id="@+id/textView28"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffffff" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="   TOTAL"
+                android:id="@+id/textView8"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffd80404" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="109dp"
-        android:layout_height="384dp"
-        android:layout_gravity="right|top"
-        android:scrollbars="vertical">
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView36" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="109dp"
+            android:layout_height="336dp"
+            android:layout_gravity="right|top"
+            android:scrollbars="vertical"
+            android:layout_x="404dp"
+            android:layout_y="-16dp">
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txCargaSinPelotaVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView36" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txDerrumbeMaulVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Visitante"
+                android:id="@+id/textView6"
+                android:layout_gravity="right|top"
+                android:gravity="right"
+                android:textStyle="normal|bold"
+                android:textColor="#ff808080" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txEntradaDeCostadoVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txCargaSinPelotaVisitante"
+                android:gravity="right"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txCagaLineVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txDerrumbeMaulVisitante"
+                android:gravity="right"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txManosEnElRuckVisistante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txEntradaDeCostadoVisitante"
+                android:gravity="right"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txOffsideVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txCagaLineVisitante"
+                android:gravity="right"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txScrumPenalVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txManosEnElRuckVisistante"
+                android:gravity="right"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTacleAltoVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txOffsideVisitante"
+                android:gravity="right"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txRetencionVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txScrumPenalVisitante"
+                android:gravity="right"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTirarseEnRuckVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txTacleAltoVisitante"
+                android:gravity="right"
+                android:textColor="#ffb4b4b4" />
 
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTacleadorNoSueltaVisitante"
-            android:gravity="right"
-            android:textColor="#ff231d71" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txRetencionVisitante"
+                android:gravity="right"
+                android:textColor="#ffffffff" />
 
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTotalPenalesVisitante"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff710909"
-            android:gravity="right|center_horizontal" />
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txTirarseEnRuckVisitante"
+                android:gravity="right"
+                android:textColor="#ffb4b4b4" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txTacleadorNoSueltaVisitante"
+                android:gravity="right"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txTotalPenalesVisitante"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffd80404"
+                android:gravity="right|center_horizontal" />
+
+        </LinearLayout>
+
+    </AbsoluteLayout>
+</ScrollView>
+
 
 </FrameLayout>

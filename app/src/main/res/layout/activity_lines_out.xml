@@ -27,7 +27,9 @@
                 android:text="Line a Favor"
                 android:id="@+id/rbLineAFavor"
                 android:layout_gravity="center_horizontal"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffcdcfdf"
+                android:checked="true" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -42,7 +44,9 @@
                     android:id="@+id/rbLineFAvorGanado"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="3.67"
-                    android:textColor="#ff088019" />
+                    android:textColor="#ff088019"
+                    android:checked="false"
+                    android:shadowColor="@android:color/holo_green_light" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -85,30 +89,34 @@
                     android:layout_weight="0.51"
                     android:textStyle="normal|bold"
                     android:textAlignment="center"
-                    android:typeface="serif" />
+                    android:typeface="serif"
+                    android:textColor="#fff5fffb" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:id="@+id/txLineAFPerdido"
-                    android:layout_weight="0.37" />
+                    android:layout_weight="0.37"
+                    android:textColor="#fff5fffb" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:id="@+id/txSLineAFPP" />
+                    android:id="@+id/txSLineAFPP"
+                    android:textColor="#fff5fffb" />
             </LinearLayout>
 
             <RadioButton
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="91dp"
                 android:text="Line en Contra"
                 android:id="@+id/rbLineContra"
                 android:layout_gravity="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:checked="false" />
+                android:checked="true"
+                android:textColor="#ffcdcfdf" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -155,27 +163,31 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:id="@+id/textView3"
-                    android:layout_weight="0.26" />
+                    android:layout_weight="0.26"
+                    android:textColor="#ffffdffd" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:id="@+id/txLineRobado"
-                    android:layout_weight="0.35" />
+                    android:layout_weight="0.35"
+                    android:textColor="#fffff6fa" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:id="@+id/txLineECPerdido"
-                    android:layout_weight="0.34" />
+                    android:layout_weight="0.34"
+                    android:textColor="#fffff6fa" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:id="@+id/txLineECPP" />
+                    android:id="@+id/txLineECPP"
+                    android:textColor="#fffff6fa" />
 
             </LinearLayout>
 
@@ -201,11 +213,11 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SUMAR"
+                        android:text="sumar"
                         android:id="@+id/btSumarLine"
                         android:layout_gravity="center_horizontal"
-                        android:layout_weight="0.15"
-                        android:onClick="lanzarToast"/>
+                        android:layout_weight="0.38" />
+
                 </LinearLayout>
             </LinearLayout>
 

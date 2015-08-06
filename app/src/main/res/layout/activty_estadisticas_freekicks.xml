@@ -4,9 +4,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.holamundo.alejandro.alejandro123.ProbandoElScrolldemierda"
+    tools:context="com.holamundo.alejandro.alejandro123."
     android:gravity="left"
     android:background="@drawable/salida22">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,7 +17,8 @@
         <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/frame">
             emas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -74,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txCargaSinPelotaLocal"
+                    android:id="@+id/txPrePushLocal"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff" />
 
@@ -83,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txDerrumbeMaulLocal"
+                    android:id="@+id/txPerdidaDeTiempoLocal"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff" />
 
@@ -92,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txEntradaCostadoLocal"
+                    android:id="@+id/txDemoraSalida22Local"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff" />
 
@@ -100,7 +102,7 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/txCargaEnElLineLocal"
+                    android:id="@+id/txHombrosBajosLocal"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff"
                     android:text="0" />
@@ -110,7 +112,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txManosEnElRuckLocal"
+                    android:id="@+id/txDevolverPelotaLocal"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff" />
 
@@ -119,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txOffSideLocal"
+                    android:id="@+id/txSimularSalidaLocal"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff" />
 
@@ -128,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txScrumPenalLocal"
+                    android:id="@+id/txDifCantJugadoresLocal"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff" />
 
@@ -137,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txTacleAltoLocal"
+                    android:id="@+id/txInfraccion1eraLineaLocal"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff" />
 
@@ -146,7 +148,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txRetencionLocal"
+                    android:id="@+id/txPelotaTorcidaLocal"
                     android:gravity="center_vertical|center_horizontal"
                     android:textColor="#ffffffff" />
 
@@ -164,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="0"
-                    android:id="@+id/txTotalPenalesLocal"
+                    android:id="@+id/txTotalFreeKicksLocal"
                     android:textColor="#ff710109"
                     android:gravity="center|center_horizontal" />
 
@@ -287,125 +289,126 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="109dp"
+                android:layout_height="384dp"
+                android:layout_gravity="right|top"
+                android:scrollbars="vertical"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/li">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView36" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txPrePushVisitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txPerdidaTiempoVisitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txDemoraSalida22Visitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/txHombrosBajosVisitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txDevuelvePelotaVisitane"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txSimulaSalidaVisitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txDifCantJugadoresVisitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txInfraccion1eraLineaVisitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txPelotaTorcidaVisitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/txTacleadorNoSueltaVisitante"
+                    android:gravity="right"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txTotalFreeKicksVisitante"
+                    android:layout_gravity="right"
+                    android:textColor="#ff710109"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
 
         </FrameLayout>
     </ScrollView>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="109dp"
-        android:layout_height="384dp"
-        android:layout_gravity="right|top"
-        android:scrollbars="vertical"
-        android:layout_alignTop="@+id/scrollView"
-        android:layout_alignParentEnd="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView36" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txCargaSinPelotaVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txDerrumbeMaulVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txEntradaDeCostadoVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/txCagaLineVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff"
-            android:text="0" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txManosEnElRuckVisistante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txOffsideVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txScrumPenalVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTacleAltoVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txRetencionVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/txTacleadorNoSueltaVisitante"
-            android:gravity="right"
-            android:textColor="#ffffffff" />
-
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="0"
-            android:id="@+id/txTotalPenalesVisitante"
-            android:layout_gravity="right"
-            android:textColor="#ff710109"
-            android:gravity="center_horizontal" />
-
-    </LinearLayout>
 
 
 </RelativeLayout>
