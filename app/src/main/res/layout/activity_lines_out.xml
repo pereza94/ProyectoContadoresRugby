@@ -9,7 +9,8 @@
     android:background="@drawable/lienout">
     <AbsoluteLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:id="@+id/ooo">
 
 
         <LinearLayout
@@ -29,15 +30,23 @@
                     android:text="Ganado"
                     android:id="@+id/rbLineFAvorGanado"
                     android:checked="false"
-                    android:textColor="#ffffffff" />
+                    android:textColor="#fff8ef1d"
+                    android:textStyle="normal|bold"
+                    android:textSize="25dp"
+                    android:textColorLink="#fff7dbf6"
+                    android:textColorHint="#fff2d4f0" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Perdio"
+                    android:text="Perdido"
                     android:id="@+id/rbLineFAvorPerdido"
                     android:checked="false"
-                    android:textColor="#ffffffff" />
+                    android:textColor="#ffac0a00"
+                    android:textStyle="normal|bold"
+                    android:textSize="25dp"
+                    android:textColorLink="#fff7dbf6"
+                    android:textColorHint="#fff2d4f0" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -45,19 +54,13 @@
                     android:text="Pelota Parcial"
                     android:id="@+id/rbLineFAvorPelotaParcial"
                     android:checked="false"
-                    android:textColor="#ffffffff" />
+                    android:textColor="#ff1105ff"
+                    android:textStyle="normal|bold"
+                    android:textSize="25dp"
+                    android:textColorLink="#fff7dbf6"
+                    android:textColorHint="#fff2d4f0" />
             </RadioGroup>
         </LinearLayout>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Line Out a Favor"
-            android:id="@+id/rbLineAFavor"
-            android:layout_x="96dp"
-            android:layout_y="3dp"
-            android:checked="true"
-            android:textColor="#ffffffff" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -67,7 +70,8 @@
             android:layout_x="101dp"
             android:layout_y="177dp"
             android:checked="true"
-            android:textColor="#ffffffff" />
+            android:textColor="#ffffffff"
+            android:enabled="true" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -82,7 +86,9 @@
                 android:text="Ganado"
                 android:id="@+id/rbLineContraRobado"
                 android:checked="false"
-                android:textColor="#ffffffff" />
+                android:textColor="#fff8ef1d"
+                android:textStyle="normal|bold"
+                android:textSize="25dp" />
 
             <RadioButton
                 android:layout_width="154dp"
@@ -90,7 +96,9 @@
                 android:text="Perdido"
                 android:id="@+id/rbLineContraPerdido"
                 android:checked="false"
-                android:textColor="#ffffffff" />
+                android:textColor="#ffac0a00"
+                android:textStyle="normal|bold"
+                android:textSize="25dp" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -98,7 +106,9 @@
                 android:text="Pelota Torcida"
                 android:id="@+id/rbLineContraPelotaParcial"
                 android:checked="false"
-                android:textColor="#ffffffff" />
+                android:textColor="#ff1105ff"
+                android:textStyle="normal|bold"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <Button
@@ -111,58 +121,72 @@
             android:textColor="#ffffffff" />
 
         <TextView
-            android:layout_width="55dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/txLineAFGAnado"
-            android:layout_x="159dp"
-            android:layout_y="55dp"
+            android:layout_x="248dp"
+            android:layout_y="52dp"
             android:textColor="#ffffffff" />
 
         <TextView
-            android:layout_width="34dp"
+            android:layout_width="28dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/txLineAFPerdido"
-            android:layout_x="157dp"
-            android:layout_y="78dp"
+            android:layout_x="246dp"
+            android:layout_y="75dp"
             android:textColor="#ffffffff" />
 
         <TextView
-            android:layout_width="19dp"
+            android:layout_width="13dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/txSLineAFPP"
-            android:layout_x="163dp"
-            android:layout_y="116dp"
+            android:layout_x="252dp"
+            android:layout_y="113dp"
             android:textColor="#ffffffff" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/txLineRobado"
-            android:layout_x="176dp"
-            android:layout_y="233dp"
+            android:layout_x="278dp"
+            android:layout_y="230dp"
             android:textColor="#ffffffff" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/txLineECPerdido"
-            android:layout_x="176dp"
-            android:layout_y="261dp"
+            android:layout_x="278dp"
+            android:layout_y="258dp"
             android:textColor="#ffffffff" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/txLineECPP"
-            android:layout_x="175dp"
-            android:layout_y="303dp"
+            android:layout_x="277dp"
+            android:layout_y="300dp"
             android:textColor="#ffffffff" />
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line Out a Favor"
+            android:id="@+id/rbLineAFavor"
+            android:layout_x="75dp"
+            android:layout_y="4dp"
+            android:checked="true"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:enabled="true" />
+
     </AbsoluteLayout>
+
 </RelativeLayout>

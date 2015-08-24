@@ -2,8 +2,6 @@ package com.holamundo.alejandro.alejandro123;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.renderscript.Sampler;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,13 +23,7 @@ public class ScrumActivity extends Activity {
     private RadioButton rbScrumContraRobadoc;
     private RadioButton rbScrumContraPerdidoc;
     private RadioButton rbScrumContraReseteadoc;
-    private TextView sumado;
-    public void esperar (int segundos) {
-        try {
-            Thread.sleep (segundos*1000);
-        } catch (Exception e) {
-        }
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,13 +39,13 @@ public class ScrumActivity extends Activity {
         rbScrumContraPerdidoc =(RadioButton) findViewById(R.id.rbScrumEncontraPerdido);
         rbScrumContraReseteadoc = (RadioButton) findViewById(R.id.rbScrumEnContraReseteado);
         btSumarScrum = (Button) findViewById(R.id.btSumarScrum);
-        sumado = (TextView) findViewById(R.id.txExitoSumado);
-        sumado.setText("");
+
+
         final TextView txAFG = (TextView) findViewById(R.id.txScrumAFGAnado);
         final TextView txAFP = (TextView) findViewById(R.id.txScrumAFPerdido);
         final TextView txAFR = (TextView) findViewById(R.id.txScrumAFReseteado);
         final TextView txECR = (TextView) findViewById(R.id.txScrumRobado);
-        final TextView txECP = (TextView) findViewById(R.id.txScrumECPerdido);
+        final TextView txECP = (TextView) findViewById(R.id.ooo);
         final TextView txECReset = (TextView) findViewById(R.id.txScrumECResetado);
         txAFG.setText(String.valueOf(g.getContScrumAFGanados()));
         txAFP.setText(String.valueOf(g.getContScrumAFPerdidos()));
@@ -111,11 +103,10 @@ public class ScrumActivity extends Activity {
                     startActivity(new Intent(ScrumActivity.this, MainActivity.class));
                 }
 
-               rbScrumFavorc.setChecked(false);
+
                rbScrumFavorGanadoc.setChecked(false);
                rbScrumFavorPerdidoc.setChecked(false);
                rbScrumFavorReseteadoc.setChecked(false);
-               rbScrumContrac.setChecked(false);
                rbScrumContraRobadoc.setChecked(false);
                 rbScrumContraPerdidoc.setChecked(false);
                 rbScrumContraReseteadoc.setChecked(false);
